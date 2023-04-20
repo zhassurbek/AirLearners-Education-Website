@@ -3,7 +3,11 @@
   border-radius: 20px;
   background-color: rgba(227, 227, 227, 0.65);
   height: 450px;
+}
 
+.single__course__item:hover {
+  background-color: rgba(227, 227, 227, 1);
+  cursor: pointer;
 }
 
 .course__img img {
@@ -22,6 +26,7 @@
 .students,
 .rating {
   font-size: 0.9rem;
+  /*популярные курсы нижные цвета текстов, не трогать*/
   color: #0a2b1e;
   font-weight: 500;
 }

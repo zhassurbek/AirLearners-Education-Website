@@ -50,9 +50,9 @@ const Courses = () => {
                                 </p>
                             </div>
 
-                            <div className="w-50 text-end">
-                                <button className="btn">Показать все</button>
-                            </div>
+                            {/*<div className="w-50 text-end">*/}
+                            {/*    <button className="btn">Показать все</button>*/}
+                            {/*</div>*/}
                         </div>
                     </Col>
                     {coursesData.map((item) => (

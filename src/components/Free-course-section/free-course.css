@@ -16,6 +16,9 @@
   font-size: 0.8rem;
 }
 
+.free__btn:hover {
+  background-color: rgb(9, 194, 156) !important; /* новый цвет фона при активации */
+}
 .free__course__img img {
   border-radius: 10px;
 }

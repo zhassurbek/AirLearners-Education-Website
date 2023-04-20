@@ -14,7 +14,7 @@ const ChooseUs = () => {
         <Row>
           <Col lg="6" md="6">
             <div className="choose__content">
-              <h2>Why Choose Us</h2>
+              <h2>Почему мы?</h2>
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Incidunt mollitia nostrum harum eos praesentium odit a sed quod
@@ -31,7 +31,7 @@ const ChooseUs = () => {
             <div className="choose__img">
               {showVideo ? (
                 <ReactPlayer
-                  url="https://www.youtube.com/watch?v=qFp27TR4Yew"
+                  url="https://www.youtube.com/watch?v=p0ggtmXghPg"
                   controls
                   width="100%"
                   height="350px"

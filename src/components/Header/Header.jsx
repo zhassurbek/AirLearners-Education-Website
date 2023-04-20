@@ -21,7 +21,7 @@ const navLinks = [
     url: "tests",
   },
   {
-    display: "Pages",
+    display: "Учебники",
     url: "",
     to: "choose-us"
   },

@@ -1,6 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import "./BasicExample.css"
+import "./TestsPage.css"
 import {Col, Container, Row} from "reactstrap";
 
 const navLinks = [
@@ -39,7 +39,7 @@ const navLinks = [
 ];
 
 
-function BasicExample() {
+function TestsPage() {
     return (
         <section>
             <Container>
@@ -56,7 +56,7 @@ function BasicExample() {
                                             Some quick example text to build on the card title and make up the
                                             bulk of the card's content.
                                         </Card.Text>
-                                        <Button variant="primary">Go somewhere</Button>
+                                        <a className="quiz1" href="/quiz1"><Button variant="primary">Go somewhere</Button></a>
                                     </Card.Body>
                                 </Card>
 
@@ -69,4 +69,4 @@ function BasicExample() {
     );
 }
 
-export default BasicExample;
+export default TestsPage;

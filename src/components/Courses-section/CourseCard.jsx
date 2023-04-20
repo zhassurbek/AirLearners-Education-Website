@@ -17,7 +17,7 @@ const CourseCard = (props) => {
                     <div>
                         <div className=" d-flex justify-content-between align-items-center">
                             <p className="lesson d-flex align-items-center gap-1">
-                                <i class="ri-book-open-line"></i> {lesson} Lessons
+                                <i class="ri-book-open-line"></i> {lesson} Уроков
                             </p>
 
                             <p className="students d-flex align-items-center gap-1">
@@ -31,7 +31,7 @@ const CourseCard = (props) => {
                             </p>
 
                             <p className="enroll d-flex align-items-center gap-1">
-                                <a href="#"> Enroll Now</a>
+                                <a href="#"> Зарегистрироваться сейчас</a>
                             </p>
                         </div>
                     </div>

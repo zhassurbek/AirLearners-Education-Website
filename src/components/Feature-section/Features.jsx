@@ -1,47 +1,50 @@
 import React from "react";
-import { Container, Row, Col } from "reactstrap";
+import {Container, Row, Col} from "reactstrap";
 import "./features.css";
 
-const FeatureData = [
-  {
-    title: "Quick Learning",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum molestias, aperiam doloribus aut sapiente praesentium eos iste dicta amet itaque!",
+const FeatureData = [{
+    title: "Быстрое обучение",
+    desc: "Мы предлагаем интерактивные курсы и тренировки, которые помогают нашим пользователям достичь результатов" +
+        " быстрее и более эффективно. С помощью нашего сайта вы сможете обучаться в любое время и в любом месте," +
+        " сохраняя при этом высокое качество обучения. Присоединяйтесь к нашему сообществу и получайте удовольствие" +
+        " от быстрого и продуктивного обучения!",
     icon: "ri-draft-line",
-  },
+},
 
-  {
-    title: "All Time Support",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum molestias, aperiam doloribus aut sapiente praesentium eos iste dicta amet itaque!",
-    icon: "ri-discuss-line",
-  },
+    {
+        title: "Постоянная поддержка",
+        desc: "Наш учебный сайт гарантирует постоянную поддержку наших пользователей на протяжении всего обучения." +
+            " Наши опытные преподаватели и специалисты всегда готовы помочь вам решить любые вопросы и проблемы," +
+            " связанные с обучением. Мы предлагаем удобные способы связи, такие как онлайн-чаты, " +
+            "электронная почта и телефонные звонки, чтобы вы могли получить ответы на свои вопросы в любое время!",
+        icon: "ri-discuss-line",
+    },
 
-  {
-    title: "Certification",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum molestias, aperiam doloribus aut sapiente praesentium eos iste dicta amet itaque!",
-    icon: "ri-contacts-book-line",
-  },
-];
+    {
+        title: "Сертификация",
+        desc: "Наш учебный сайт предлагает возможность получить сертификацию после успешного окончания курсов. " +
+            "Мы гарантируем, что сертификаты, выдаваемые нашим сайтом, признаны и уважаемы в различных индустриях " +
+            "и областях. Мы поможем вам получить необходимые знания и навыки, " +
+            "чтобы достичь ваших учебных и профессиональных целей, а наши сертификаты подтвердят ваше достижение.",
+        icon: "ri-contacts-book-line",
+    },];
 
 const Features = () => {
-  return (
-    <section>
-      <Container>
-        <Row>
-          {FeatureData.map((item, index) => (
-            <Col lg="4" md="6" key={index}>
-              <div className="single__feature text-center px-4">
-                <h2 className="mb-3">
-                  <i class={item.icon}></i>
-                </h2>
-                <h6>{item.title}</h6>
-                <p>{item.desc}</p>
-              </div>
-            </Col>
-          ))}
-        </Row>
-      </Container>
-    </section>
-  );
+    return (<section>
+        <Container>
+            <Row>
+                {FeatureData.map((item, index) => (<Col lg="4" md="6" key={index}>
+                    <div className="single__feature text-center px-4">
+                        <h2 className="mb-3">
+                            <i class={item.icon}></i>
+                        </h2>
+                        <h6>{item.title}</h6>
+                        <p>{item.desc}</p>
+                    </div>
+                </Col>))}
+            </Row>
+        </Container>
+    </section>);
 };
 
 export default Features;
