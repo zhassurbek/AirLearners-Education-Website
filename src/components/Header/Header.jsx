@@ -4,24 +4,29 @@ import "./header.css";
 
 const navLinks = [
   {
-    display: "Home",
-    url: "#",
+    display: "Главная",
+    url: "/",
   },
   {
-    display: "About",
+    display: "Про нас",
     url: "#",
   },
 
   {
-    display: "Courses",
-    url: "#",
+    display: "Курсы",
+    url: "courses",
+  },
+  {
+    display: "Тесты",
+    url: "tests",
   },
   {
     display: "Pages",
-    url: "#",
+    url: "",
+    to: "choose-us"
   },
   {
-    display: "Blog",
+    display: "Блоги",
     url: "#",
   },
 ];
@@ -37,7 +42,7 @@ const Header = () => {
         <div className="navigation d-flex align-items-center justify-content-between">
           <div className="logo">
             <h2 className=" d-flex align-items-center gap-1">
-              <i class="ri-pantone-line"></i> Learners.
+              <i class="jam jam-plane"></i> Air Learners
             </h2>
           </div>
 
@@ -45,7 +50,7 @@ const Header = () => {
             <div className="nav__menu" ref={menuRef} onClick={menuToggle}>
               <ul className="nav__list">
                 {navLinks.map((item, index) => (
-                  <li key={index} className="nav__item">
+                  <li key={index} className="nav__item" >
                     <a href={item.url}>{item.display}</a>
                   </li>
                 ))}
@@ -54,7 +59,7 @@ const Header = () => {
 
             <div className="nav__right">
               <p className="mb-0 d-flex align-items-center gap-2">
-                <i class="ri-phone-line"></i> +88 0123456789
+                <i class="ri-phone-line"></i> +7 777 777 77 77
               </p>
             </div>
           </div>

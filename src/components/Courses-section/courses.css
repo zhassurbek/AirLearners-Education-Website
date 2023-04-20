@@ -1,5 +1,9 @@
 .single__course__item {
   padding: 15px;
+  border-radius: 20px;
+  background-color: rgba(227, 227, 227, 0.65);
+  height: 450px;
+
 }
 
 .course__img img {
@@ -29,9 +33,20 @@
 }
 
 .course__title {
-  line-height: 2rem;
+  /*line-height: 2rem;*/
+}
+
+.title_style {
+  /*margin-bottom: 30px;*/
+  height: 80px;
 }
 
 .course__top__left h2 {
   font-weight: 600;
 }
+
+/*.course__details {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  !*gap: 10px;*!*/
+/*}*/
