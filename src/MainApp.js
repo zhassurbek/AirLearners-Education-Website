@@ -1,15 +1,13 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Home from "./pages/Home";
-import About from "./components/About-us/AboutUs";
 import Courses from "./pagesInSite/courses/CoursesPage";
-import BasicExample from "./pagesInSite/Tests/TestsPage";
 import Tests from "./pagesInSite/Tests/Tests";
-import Quiz1 from "./pagesInSite/Tests/quiz/quiz1";
 import CoursesList1 from "./pagesInSite/courses/coursesList/course1";
 
 import Quizs from "./pagesInSite/Tests/quiz/QuizsPage";
 import Quiz2Test from "./quiz2Test/Quiz2Test";
+import Quiz2Show from "./quiz2Test/Quiz2Show";
 
 
 const MainApp = () => {
@@ -25,6 +23,8 @@ const MainApp = () => {
                 <Route exact path="/full-courses" component={Courses} />
                 <Route exact path="/full-quizs" component={Quizs} />
                 <Route exact path="/quiz2Test" component={Quiz2Test} />
+                <Route path="/quiz/01" component={Quiz2Show} />
+                <Route path="/quiz/02" component={Quiz2Show} />
             </Switch>
         </Router>
     );

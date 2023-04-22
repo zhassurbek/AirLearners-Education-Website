@@ -19,7 +19,27 @@ function Quiz2Test() {
             question: "What is the tallest mountain in the world?",
             options: ["K2", "Mount Everest", "Makalu", "Cho Oyu"],
             answer: "Mount Everest"
-        }
+        },
+        {
+            question: "2What is the capital of France?",
+            options: ["Paris", "Berlin", "Rome", "Madrid"],
+            answer: "Paris"
+        },
+        {
+            question: "2What is the tallest mountain in the world?",
+            options: ["K2", "Mount Everest", "Makalu", "Cho Oyu"],
+            answer: "Mount Everest"
+        },
+        {
+            question: "3What is the capital of France?",
+            options: ["Paris", "Berlin", "Rome", "Madrid"],
+            answer: "Paris"
+        },
+        {
+            question: "3What is the tallest mountain in the world?",
+            options: ["K2", "Mount Everest", "Makalu", "Cho Oyu"],
+            answer: "Mount Everest"
+        },
     ];
 
     const handleAnswerSubmit = () => {
@@ -85,7 +105,7 @@ function Quiz2Test() {
                 <h2>Quiz Results:</h2>
                 <p>Score: {score} / {questions.length}</p>
                 <h3>Answers:</h3>
-                <ul>
+                <ol>
                     {uniqueQuestions.map((question, index) => {
                         const questionObj = questions.find(q => q.question === question);
                         // Получаем ответ пользователя для текущего вопроса
@@ -93,20 +113,24 @@ function Quiz2Test() {
                         const userAnswer = userAnswerObj ? userAnswerObj.answer : "Not answered";
                         return (
                             <li key={index}>
-                                <p>{questionObj.question}</p>
-                                <p>Correct answer: {questionObj.answer}</p>
-                                <p>Your answer: {userAnswer}</p>
+                                <p style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>{questionObj.question}</p>
+                                <p style={{ marginBottom: '5px' }}>Correct answer: {questionObj.answer}</p>
+                                <p style={{ marginBottom: '5px' }}>Your answer: {userAnswer}</p>
+
+                                {/*<p style={{}}>{questionObj.question}</p>*/}
+                                {/*<p>Correct answer: {questionObj.answer}</p>*/}
+                                {/*<p>Your answer: {userAnswer}</p>*/}
                             </li>
                         );
                     })}
-                </ul>
+                </ol>
             </div>
         );
     };
 
 
     return (
-        <div>
+        <div className="container quiz2test">
             {questionIndex < questions.length ? renderQuiz() : renderResults()}
         </div>
     );

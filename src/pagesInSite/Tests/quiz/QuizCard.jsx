@@ -1,14 +1,15 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 const QuizCard = (props) => {
-    const {imgUrl, title, lesson, students, rating} = props.item;
+    const {id, title, lesson, students, rating} = props.item;
 
     return (
         <div class="container">
             <div className="single__quiz__item">
-                <div className="course__img">
-                    <img src={imgUrl} alt="" className="w-100"/>
-                </div>
+                {/*<div className="course__img">*/}
+                {/*    <img src={imgUrl} alt="" className="w-100"/>*/}
+                {/*</div>*/}
 
                 <div className="course__details">
                     <div className="title_style">
@@ -31,7 +32,7 @@ const QuizCard = (props) => {
                             </p>
 
                             <p className="enroll d-flex align-items-center gap-1">
-                                <a href="#"> Пройти сейчас</a>
+                                <Link to={`/quiz/${id}`}> Пройти сейчас</Link>
                             </p>
                         </div>
                     </div>
@@ -40,5 +41,6 @@ const QuizCard = (props) => {
         </div>
     );
 };
+
 
 export default QuizCard;
