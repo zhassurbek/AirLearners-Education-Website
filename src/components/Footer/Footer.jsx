@@ -22,7 +22,7 @@ const footerQuickLinks = [
 
   {
     display: "Блоги",
-    url: "#",
+    url: "tests-typescript",
   },
 ];
 

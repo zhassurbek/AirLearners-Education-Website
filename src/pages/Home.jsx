@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, {Fragment} from "react";
 import Header from "../components/Header/Header";
 import HeroSection from "../components/Hero-Section/HeroSection";
 import CompanySection from "../components/Company-section/Company";
@@ -13,23 +13,30 @@ import Testimonials from "../components/Testimonial/Testimonials";
 
 import Newsletter from "../components/Newsletter/Newsletter";
 import Footer from "../components/Footer/Footer";
+import Quiz from "../pagesInSite/Tests/quiz/quiz1";
+import QuizsListPage from "../pagesInSite/Tests/quiz/QuizsListPage";
 
 const Home = () => {
-  return (
-    <Fragment>
-      <Header />
-      <HeroSection />
-      <CompanySection />
-      <AboutUs />
-      <Courses />
-      <ChooseUs />
-      <Features />
-      <FreeCourse />
-      <Testimonials />
-      <Newsletter />
-      <Footer />
-    </Fragment>
-  );
+    return (<Fragment>
+        <Header/>
+        <HeroSection/>
+        <CompanySection/>
+        <div id="example">
+            <AboutUs/>
+        </div>
+        <div id="courses">
+            <Courses/>
+        </div>
+        <div id="quizs-List-Page">
+            <QuizsListPage/>
+        </div>
+        <ChooseUs/>
+        <Features/>
+        <FreeCourse/>
+        <Testimonials/>
+        <Newsletter/>
+        <Footer/>
+    </Fragment>);
 };
 
 export default Home;

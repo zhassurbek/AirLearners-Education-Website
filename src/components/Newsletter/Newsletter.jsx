@@ -11,7 +11,7 @@ const Newsletter = () => {
             <h2 className="mb-4">Подпишитесь на нашу рассылку</h2>
             <div className="subscribe">
               <input type="text" placeholder="Email" />
-              <button className="btn">Subscribe</button>
+              <button className="btn">Подписаться</button>
             </div>
           </Col>
         </Row>

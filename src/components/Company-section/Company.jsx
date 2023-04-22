@@ -8,7 +8,7 @@ const Company = () => {
                 <Row>
                     <Col lg="2" md="3" sm="4" xs="6">
                         <h3 className=" d-flex align-items-center gap-1">
-                            <i className="@svg('si-qatarairways')"/>
+                            <i class="SiQatarairways"/>
                             Qatar Airways
                         </h3>
                     </Col>

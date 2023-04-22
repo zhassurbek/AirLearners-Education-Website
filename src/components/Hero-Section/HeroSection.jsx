@@ -23,10 +23,10 @@ const HeroSection = () => {
                 quas officiis et repellat!
               </p>
             </div>
-            <div className="search">
-              <input type="text" placeholder="Search" />
-              <button className="btn">Search</button>
-            </div>
+            {/*<div className="search">*/}
+            {/*  <input type="text" placeholder="Search" />*/}
+            {/*  <button className="btn">Search</button>*/}
+            {/*</div>*/}
           </Col>
 
           <Col lg="6" md="6">

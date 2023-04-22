@@ -1,0 +1,114 @@
+/*.single__course__item {*/
+/*    padding: 15px;*/
+/*    border-radius: 20px;*/
+/*    background-color: rgba(227, 227, 227, 0.65);*/
+/*    height: 450px;*/
+/*}*/
+
+/*.single__course__item:hover {*/
+/*    background-color: rgba(227, 227, 227, 1);*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.course__img img {*/
+/*    border-radius: 10px;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+/*.enroll a {*/
+/*    text-decoration: none;*/
+/*    font-weight: 600;*/
+/*    font-size: 0.9rem;*/
+/*    color: #17bf9e;*/
+/*}*/
+
+/*.lesson,*/
+/*.students,*/
+/*.rating {*/
+/*    font-size: 0.9rem;*/
+/*    !*популярные курсы нижные цвета текстов, не трогать*!*/
+/*    color: #0a2b1e;*/
+/*    font-weight: 500;*/
+/*}*/
+
+/*.lesson i,*/
+/*.students i,*/
+/*.rating i {*/
+/*    font-weight: 400;*/
+/*}*/
+
+/*.course__title {*/
+/*    !*line-height: 2rem;*!*/
+/*}*/
+
+/*.title_style {*/
+/*    !*margin-bottom: 30px;*!*/
+/*    height: 80px;*/
+/*}*/
+
+/*.course__top__left h2 {*/
+/*    font-weight: 600;*/
+/*    border-left: 80px;*/
+/*}*/
+.quiz-container {
+    margin: 0 20%;
+}
+
+
+.single__quiz__item {
+    padding: 15px;
+    border-radius: 20px;
+    background-color: rgba(227, 227, 227, 0.65);
+    /*height: 450px;*/
+}
+
+.single__quiz__item:hover {
+    background-color: rgba(227, 227, 227, 1);
+    cursor: pointer;
+}
+
+/*.course__img img {*/
+/*    border-radius: 10px;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+/*.enroll a {*/
+/*    text-decoration: none;*/
+/*    font-weight: 600;*/
+/*    font-size: 0.9rem;*/
+/*    color: #17bf9e;*/
+/*}*/
+
+/*.lesson,*/
+/*.students,*/
+/*.rating {*/
+/*    font-size: 0.9rem;*/
+/*    !*популярные курсы нижные цвета текстов, не трогать*!*/
+/*    color: #0a2b1e;*/
+/*    font-weight: 500;*/
+/*}*/
+
+/*.lesson i,*/
+/*.students i,*/
+/*.rating i {*/
+/*    font-weight: 400;*/
+/*}*/
+
+/*.course__title {*/
+/*    !*line-height: 2rem;*!*/
+/*}*/
+
+/*.title_style {*/
+/*    !*margin-bottom: 30px;*!*/
+/*    height: 80px;*/
+/*}*/
+
+/*.course__top__left h2 {*/
+/*    font-weight: 600;*/
+/*}*/
+
+/*.course__details {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  !*gap: 10px;*!*/
+/*}*/
