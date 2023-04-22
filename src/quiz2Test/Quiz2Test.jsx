@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
-import { Form, Button } from 'react-bootstrap';
+import React, {useState} from 'react';
+import {Form, Button} from 'react-bootstrap';
 import './Quiz2Test.css'; // импортируем CSS-файл
 
 function Quiz2Test() {
     const [questionIndex, setQuestionIndex] = useState(0);
     const [score, setScore] = useState(0);
+    const [userAnswers, setUserAnswers] = useState([]); // массив для хранения ответов пользователя
     const [currentAnswer, setCurrentAnswer] = useState(null);
+
 
     const questions = [
         {
@@ -26,6 +28,8 @@ function Quiz2Test() {
         if (isCorrectAnswer) {
             setScore(score + 1);
         }
+        // сохраняем ответ пользователя в массиве userAnswers
+        setUserAnswers([...userAnswers, {question: currentQuestion.question, answer: currentAnswer}]);
         setQuestionIndex(questionIndex + 1);
         setCurrentAnswer(null);
     };
@@ -73,6 +77,7 @@ function Quiz2Test() {
         );
     };
 
+
     const renderResults = () => {
         const uniqueQuestions = [...new Set(questions.map(question => question.question))];
         return (
@@ -83,12 +88,14 @@ function Quiz2Test() {
                 <ul>
                     {uniqueQuestions.map((question, index) => {
                         const questionObj = questions.find(q => q.question === question);
-                        const answer = currentAnswer ? currentAnswer[index] : null;
+                        // Получаем ответ пользователя для текущего вопроса
+                        const userAnswerObj = userAnswers.find(ans => ans.question === questionObj.question);
+                        const userAnswer = userAnswerObj ? userAnswerObj.answer : "Not answered";
                         return (
                             <li key={index}>
                                 <p>{questionObj.question}</p>
                                 <p>Correct answer: {questionObj.answer}</p>
-                                <p>Your answer: {answer}</p>
+                                <p>Your answer: {userAnswer}</p>
                             </li>
                         );
                     })}
