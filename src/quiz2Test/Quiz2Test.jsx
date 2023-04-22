@@ -1,57 +1,34 @@
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
+import './Quiz2Test.css'; // импортируем CSS-файл
 
-function Quiz() {
+function Quiz2Test() {
     const [questionIndex, setQuestionIndex] = useState(0);
-    const [answers, setAnswers] = useState([]);
     const [score, setScore] = useState(0);
+    const [currentAnswer, setCurrentAnswer] = useState(null);
 
     const questions = [
         {
-            question: 'What is the capital of France?',
-            options: ['Paris', 'Berlin', 'Rome', 'Madrid'],
-            answer: 'Paris'
+            question: "What is the capital of France?",
+            options: ["Paris", "Berlin", "Rome", "Madrid"],
+            answer: "Paris"
         },
         {
-            question: 'What is the tallest mountain in the world?',
-            options: ['K2', 'Mount Everest', 'Makalu', 'Cho Oyu'],
-            answer: 'Mount Everest'
-        },
-        // Добавьте оставшиеся вопросы
+            question: "What is the tallest mountain in the world?",
+            options: ["K2", "Mount Everest", "Makalu", "Cho Oyu"],
+            answer: "Mount Everest"
+        }
     ];
 
-    const handleAnswerSubmit = (answer) => {
+    const handleAnswerSubmit = () => {
         const currentQuestion = questions[questionIndex];
-        const isCorrectAnswer = answer === currentQuestion.answer;
-        setAnswers([...answers, { question: currentQuestion.question, answer, isCorrect: isCorrectAnswer }]);
+        const isCorrectAnswer = currentAnswer === currentQuestion.answer;
         if (isCorrectAnswer) {
             setScore(score + 1);
         }
         setQuestionIndex(questionIndex + 1);
+        setCurrentAnswer(null);
     };
-
-    const renderResults = () => {
-        return (
-            <div>
-                <h2>Quiz Results:</h2>
-                <p>Score: {score} / {questions.length}</p>
-                <ol>
-                    {answers.map((answer, index) => (
-                        <li key={index}>
-                            <p><strong>{answer.question}</strong></p>
-                            <p>Your answer: {answer.answer}</p>
-                            <p>Correct answer: {questions.find(q => q.question === answer.question).answer}</p>
-                            {answer.isCorrect ? <p>Correct!</p> : <p>Incorrect</p>}
-                        </li>
-                    ))}
-                </ol>
-            </div>
-        );
-    };
-
-    const handlePreviousQuestion = () => {
-        setQuestionIndex(questionIndex - 1);
-    }
 
     const renderQuiz = () => {
         const currentQuestion = questions[questionIndex];
@@ -66,47 +43,60 @@ function Quiz() {
                                 label={option}
                                 value={option}
                                 name="answer"
-                                onChange={(e) => handleAnswerSubmit(e.target.value)}
+                                checked={currentAnswer === option}
+                                onChange={(e) => setCurrentAnswer(e.target.value)}
                             />
                         </div>
                     ))}
                 </Form.Group>
-                <Button variant="primary" type="submit" onClick={() => handleAnswerSubmit(null)}>
-                    Next Question
-                </Button>
-                {questionIndex > 0 && (
-                    <Button variant="secondary" type="button" onClick={handlePreviousQuestion}>
-                        Previous Question
+                <div className="button-group"> {/* добавляем дополнительный div */}
+                    {questionIndex > 0 && (
+                        <Button
+                            variant="secondary"
+                            type="button"
+                            className="mx-2 mr-4" // добавляем margin-right
+                            onClick={() => setQuestionIndex(questionIndex - 1)}
+                        >
+                            Previous
+                        </Button>
+                    )}
+                    <Button
+                        variant="primary"
+                        type="button"
+                        disabled={!currentAnswer}
+                        onClick={() => handleAnswerSubmit()}
+                    >
+                        {questionIndex === questions.length - 1 ? "Finish" : "Next"}
                     </Button>
-                )}
+                </div>
             </Form>
         );
     };
 
-    // const renderQuiz = () => {
-    //     const currentQuestion = questions[questionIndex];
-    //     return (
-    //         <Form>
-    //             <Form.Group>
-    //                 <Form.Label>{currentQuestion.question}</Form.Label>
-    //                 {currentQuestion.options.map((option) => (
-    //                     <div key={option} className="mb-3">
-    //                         <Form.Check
-    //                             type="radio"
-    //                             label={option}
-    //                             value={option}
-    //                             name="answer"
-    //                             onChange={(e) => handleAnswerSubmit(e.target.value)}
-    //                         />
-    //                     </div>
-    //                 ))}
-    //             </Form.Group>
-    //             <Button variant="primary" type="submit" onClick={() => handleAnswerSubmit(null)}>
-    //                 Next Question
-    //             </Button>
-    //         </Form>
-    //     );
-    // };
+    const renderResults = () => {
+        const uniqueQuestions = [...new Set(questions.map(question => question.question))];
+        return (
+            <div>
+                <h2>Quiz Results:</h2>
+                <p>Score: {score} / {questions.length}</p>
+                <h3>Answers:</h3>
+                <ul>
+                    {uniqueQuestions.map((question, index) => {
+                        const questionObj = questions.find(q => q.question === question);
+                        const answer = currentAnswer ? currentAnswer[index] : null;
+                        return (
+                            <li key={index}>
+                                <p>{questionObj.question}</p>
+                                <p>Correct answer: {questionObj.answer}</p>
+                                <p>Your answer: {answer}</p>
+                            </li>
+                        );
+                    })}
+                </ul>
+            </div>
+        );
+    };
+
 
     return (
         <div>
@@ -115,4 +105,4 @@ function Quiz() {
     );
 }
 
-export default Quiz;
+export default Quiz2Test;
