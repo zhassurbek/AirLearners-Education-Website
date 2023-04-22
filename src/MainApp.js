@@ -7,7 +7,9 @@ import CoursesList1 from "./pagesInSite/courses/coursesList/course1";
 
 import Quizs from "./pagesInSite/Tests/quiz/QuizsPage";
 import Quiz2Test from "./quiz2Test/Quiz2Test";
-import Quiz2Show from "./quiz2Test/Quiz2Show";
+import Quiz2Show from "./quiz2Test/forShowsQuizs/Quiz2Show";
+import Quiz1Show from "./quiz2Test/forShowsQuizs/Quiz1Show";
+import Quiz3Show from "./quiz2Test/forShowsQuizs/Quiz3Show";
 
 
 const MainApp = () => {
@@ -23,8 +25,9 @@ const MainApp = () => {
                 <Route exact path="/full-courses" component={Courses} />
                 <Route exact path="/full-quizs" component={Quizs} />
                 <Route exact path="/quiz2Test" component={Quiz2Test} />
-                <Route path="/quiz/01" component={Quiz2Show} />
+                <Route path="/quiz/01" component={Quiz1Show} />
                 <Route path="/quiz/02" component={Quiz2Show} />
+                <Route path="/quiz/03" component={Quiz3Show} />
             </Switch>
         </Router>
     );

@@ -7,8 +7,8 @@ import QuizCard from "./QuizCard";
 const quizsList = [
     {
         id: "01",
-        title: "Электронные приборные системы",
-        lesson: 12,
+        title: "Электронные приборные системы 1",
+        lesson: 10,
         students: 12.5,
         rating: 5.9,
         // imgUrl: courseImg1,
@@ -16,8 +16,8 @@ const quizsList = [
 
     {
         id: "02",
-        title: "Quiz 2",
-        lesson: 12,
+        title: "Электронные приборные системы 2",
+        lesson: 10,
         students: 12.5,
         rating: 5.9,
         // imgUrl: courseImg2,
@@ -25,8 +25,8 @@ const quizsList = [
 
     {
         id: "03",
-        title: "Quiz 3",
-        lesson: 12,
+        title: "Электронные приборные системы 3",
+        lesson: 10,
         students: 12.5,
         rating: 5.9,
         // imgUrl: courseImg3,
@@ -41,7 +41,7 @@ const QuizsList = () => {
                     <Col lg="12" className="mb-5">
                         <div className="course__top d-flex justify-content-between align-items-center">
                             <div className="course__top__left w-50">
-                                <h1>Наши популярные Quiz</h1>
+                                <h1>Наши популярные тесты</h1>
                                 <p style={{fontSize: "20px"}}>
                                     Тесты, представленные на нашей платформе,
                                     помогут вам расширить свои знания и навыки в области авиации.
@@ -50,7 +50,7 @@ const QuizsList = () => {
 
                             <div className="w-50 text-end">
                                 <Link to="/full-quizs">
-                                    <button className="btn">Показать все quiz</button>
+                                    <button className="btn">Показать все тесты</button>
                                 </Link>
                             </div>
                         </div>

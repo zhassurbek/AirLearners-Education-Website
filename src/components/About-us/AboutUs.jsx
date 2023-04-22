@@ -32,7 +32,7 @@ const AboutUs = () => {
                       <CountUp start={0} end={25} duration={2} suffix="K" />
                     </span>
 
-                    <p className="counter__title">Completed Projects</p>
+                    <p className="counter__title">Завершенные проекты</p>
                   </div>
 
                   <div className="single__counter">
@@ -40,7 +40,7 @@ const AboutUs = () => {
                       <CountUp start={0} end={12} duration={2} suffix="M" />
                     </span>
 
-                    <p className="counter__title">Patient Around World</p>
+                    <p className="counter__title">Ученики по всему миру</p>
                   </div>
                 </div>
 
@@ -50,7 +50,7 @@ const AboutUs = () => {
                       <CountUp start={0} end={95} duration={2} suffix="M" />
                     </span>
 
-                    <p className="counter__title">Ideas Raised Funds</p>
+                    <p className="counter__title">Привлеченные средства</p>
                   </div>
 
                   <div className="single__counter">
@@ -58,7 +58,7 @@ const AboutUs = () => {
                       <CountUp start={0} end={5} duration={2} suffix="K" />
                     </span>
 
-                    <p className="counter__title">Categories Served</p>
+                    <p className="counter__title">Обслуживаемые категории</p>
                   </div>
                 </div>
               </div>
