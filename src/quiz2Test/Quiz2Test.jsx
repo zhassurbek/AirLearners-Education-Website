@@ -11,35 +11,71 @@ function Quiz2Test() {
 
     const questions = [
         {
-            question: "What is the capital of France?",
-            options: ["Paris", "Berlin", "Rome", "Madrid"],
-            answer: "Paris"
+            question: "1. Каковы основные элементы формата \"Classic T\"?",
+            options: ["Направление, высота и перепад высот.", "Воздушная скорость, тангаж и крен.", "Воздушная скорость, ориентация, высота и направление."],
+            answer: "Воздушная скорость, ориентация, высота и направление."
         },
         {
-            question: "What is the tallest mountain in the world?",
-            options: ["K2", "Mount Everest", "Makalu", "Cho Oyu"],
-            answer: "Mount Everest"
+            question: "2. Типичными индикаторами на EHSI являются?",
+            options: ["Показания двигателя", "VOR, карта, план и метеорологический радар", "VOR, план, карта и высота полета"],
+            answer: "VOR, карта, план и метеорологический радар"
         },
         {
-            question: "2What is the capital of France?",
-            options: ["Paris", "Berlin", "Rome", "Madrid"],
-            answer: "Paris"
+            question: "3. Что означает движение отображаемой взлетно-посадочной полосы на EADI вниз во время финальной стадии захода на посадку?",
+            options: ["Полет вниз", "Полет вверх", "Поддержание пути спуска"],
+            answer: "Полет вниз"
         },
         {
-            question: "2What is the tallest mountain in the world?",
-            options: ["K2", "Mount Everest", "Makalu", "Cho Oyu"],
-            answer: "Mount Everest"
+            question: "4. Во время приближения по инструментальной посадке, если указатель склона пути спуска находится ниже центральной метки, то это означает, что самолет находится",
+            options: ["выше пути спуска", "ниже пути спуска", "слева от локатора"],
+            answer: "выше пути спуска"
         },
         {
-            question: "3What is the capital of France?",
-            options: ["Paris", "Berlin", "Rome", "Madrid"],
-            answer: "Paris"
+            question: "5. Где отображаются параметры двигателя?",
+            options: ["На ЭКАМ", "На EHSI", "На FMSCDU"],
+            answer: "На ЭКАМ"
         },
         {
-            question: "3What is the tallest mountain in the world?",
-            options: ["K2", "Mount Everest", "Makalu", "Cho Oyu"],
-            answer: "Mount Everest"
+            question: "6. Какой элемент ADI является неподвижным?",
+            options: ["Указатель склона пути спуска", "Символ самолета", "Линия бокового отклонения"],
+            answer: "Символ самолета"
         },
+        {
+            question: "8. Какой инструмент показывает восходящую полосу взлетно-посадочной полосы?",
+            options: ["ECAM", "EHSI", "EADI"],
+            answer: "EADI"
+        },
+
+        {
+            question: "9. Какие функции доступны на EHSI?",
+            options: ["Полный дуговой дисплей и только погода", "Полный дуговой дисплей, погода и режим карты", "Только полный дуговой дисплей"],
+            answer: "Полный дуговой дисплей, погода и режим карты"
+        },
+
+        {
+            question: "10. С радиоуправляемым автопилотом, какие входы?",
+            options: ["ADF и VOR", "ILS и VOR", "ADF и ILS"],
+            answer: "ILS и VOR"
+        },
+
+        {
+            question: "11. Какого цвета команды директора полета на дисплее EADI?",
+            options: ["Голубой", "Пурпурный", "Красный"],
+            answer: "Пурпурный"
+        },
+
+        {
+            question: "12. У систем EFIS две панели управления, какова их цель?",
+            options: ["Одна для управления типом дисплея EFIS, а другая для выбора источника отображаемой информации.", "Одна для дисплея EADI, а другая для дисплея EHSI.", "Одна для управления дисплеем, а другая для резерва."],
+            answer: "Одна для управления типом дисплея EFIS, а другая для выбора источника отображаемой информации."
+        },
+
+        {
+            question: "13. Что вы ожидаете увидеть на дисплее EADI?",
+            options: ["Курсовую информацию, метеорадар, предупреждение о точке маршрута и индикаторы направления.", "Показания компаса, выбранный курс и VOR.", "Команды директора полета, индикатор поперечного наклона, скорость до высоты и автоматическую посадку"],
+            answer: "Команды директора полета, индикатор поперечного наклона, скорость до высоты и автоматическую посадку"
+        }
+
     ];
 
     const handleAnswerSubmit = () => {
@@ -81,7 +117,7 @@ function Quiz2Test() {
                             className="mx-2 mr-4" // добавляем margin-right
                             onClick={() => setQuestionIndex(questionIndex - 1)}
                         >
-                            Previous
+                            Предыдущий
                         </Button>
                     )}
                     <Button
@@ -90,7 +126,7 @@ function Quiz2Test() {
                         disabled={!currentAnswer}
                         onClick={() => handleAnswerSubmit()}
                     >
-                        {questionIndex === questions.length - 1 ? "Finish" : "Next"}
+                        {questionIndex === questions.length - 1 ? "Закончить" : "Следующий"}
                     </Button>
                 </div>
             </Form>
@@ -102,9 +138,9 @@ function Quiz2Test() {
         const uniqueQuestions = [...new Set(questions.map(question => question.question))];
         return (
             <div>
-                <h2>Quiz Results:</h2>
-                <p>Score: {score} / {questions.length}</p>
-                <h3>Answers:</h3>
+                <h2>Результаты теста::</h2>
+                <p>Баллы: {score} / {questions.length}</p>
+                <h3>Ответы:</h3>
                 <ol>
                     {uniqueQuestions.map((question, index) => {
                         const questionObj = questions.find(q => q.question === question);
@@ -113,13 +149,13 @@ function Quiz2Test() {
                         const userAnswer = userAnswerObj ? userAnswerObj.answer : "Not answered";
                         return (
                             <li key={index}>
-                                <p style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>{questionObj.question}</p>
-                                <p style={{ marginBottom: '5px' }}>Correct answer: {questionObj.answer}</p>
-                                <p style={{ marginBottom: '5px' }}>Your answer: {userAnswer}</p>
-
-                                {/*<p style={{}}>{questionObj.question}</p>*/}
-                                {/*<p>Correct answer: {questionObj.answer}</p>*/}
-                                {/*<p>Your answer: {userAnswer}</p>*/}
+                                <p style={{
+                                    fontSize: '16px',
+                                    fontWeight: 'bold',
+                                    marginBottom: '10px'
+                                }}>{questionObj.question}</p>
+                                <p style={{marginBottom: '5px'}}>Правильный ответ: {questionObj.answer}</p>
+                                <p style={{marginBottom: '5px'}}>Ваш ответ: {userAnswer}</p>
                             </li>
                         );
                     })}

@@ -7,7 +7,7 @@ import QuizCard from "./QuizCard";
 const quizsList = [
     {
         id: "01",
-        title: "Quiz 1",
+        title: "Электронные приборные системы",
         lesson: 12,
         students: 12.5,
         rating: 5.9,
