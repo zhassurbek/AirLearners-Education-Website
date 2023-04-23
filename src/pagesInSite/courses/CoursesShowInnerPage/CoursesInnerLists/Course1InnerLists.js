@@ -1,23 +1,34 @@
 import React, { useState } from "react";
 import { Button, Card, ListGroup } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import {Col} from "reactstrap";
+import CourseCard from "../../coursesList/CourseCard";
 
-const courses = [
+const lessonsData = [
     {
         title: "Урок 1",
         description: "Описание курса 1",
         image: "",
+        lessonTitle: "",
+        youtubeLink: "",
+        fullDescriptionText: "",
         // https://via.placeholder.com/150
     },
     {
         title: "Урок 2",
         description: "Описание курса 2",
         image: "",
+        lessonTitle: "",
+        youtubeLink: "",
+        fullDescriptionText: "",
     },
     {
         title: "Урок 3",
         description: "Описание курса 3",
         image: "",
+        lessonTitle: "",
+        youtubeLink: "",
+        fullDescriptionText: "",
     },
 ];
 
@@ -27,10 +38,15 @@ const Course1InnerInMainPage = () => {
     const handleOnClick = () => {
         setIsCompleted(true);
     };
+    {lessonsData.map((itemLessonsData) => (
+        <Col lg="4" md="6" sm="6">
+            <CourseCard key={itemLessonsData.id} itemLessonsData={itemLessonsData}/>
+        </Col>
+    ))}
 
     return (
         <ListGroup>
-            {courses.map((course, index) => (
+            {lessonsData.map((course, index) => (
                 <ListGroup.Item key={index}>
                     <Card>
                         <Card.Img variant="top" src={course.image} />
@@ -47,6 +63,7 @@ const Course1InnerInMainPage = () => {
                 </ListGroup.Item>
             ))}
         </ListGroup>
+
     );
 };
 

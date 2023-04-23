@@ -13,6 +13,7 @@ import Quiz3Show from "./quiz2Test/forShowsQuizs/Quiz3Show";
 import Course1InnerPageShow from "./pagesInSite/courses/CoursesShowInnerPage/Course1InnerPageShow";
 import Course3InnerPageShow from "./pagesInSite/courses/CoursesShowInnerPage/Course3InnerPageShow";
 import Course2InnerPageShow from "./pagesInSite/courses/CoursesShowInnerPage/Course2InnerPageShow";
+import Lesson1Page from "./pagesInSite/courses/CoursesShowInnerPage/CoursesInnerLists/lessonPages/Lesson1Page";
 
 
 const MainApp = () => {
@@ -36,6 +37,20 @@ const MainApp = () => {
                 <Route path="/course/01" component={Course1InnerPageShow} />
                 <Route path="/course/02" component={Course2InnerPageShow} />
                 <Route path="/course/03" component={Course3InnerPageShow} />
+
+
+
+                <Route exact path="/lesson/01" component={Lesson1Page} />
+
+
+
+                {/* For full-courses page rendering for courses */}
+                {/*<Route path="/course/01" component={Cour}*/}
+
+
+
+                {/* Inner Page Lessons from Courses */}
+                <Route exact path="/course/01/lesson1" component={Quiz2Show} />
             </Switch>
         </Router>
     );
