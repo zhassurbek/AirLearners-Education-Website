@@ -9,8 +9,8 @@ const quizsList = [
         id: "01",
         title: "Электронные приборные системы 1",
         lesson: 10,
-        students: 12.5,
-        rating: 5.9,
+        students: 3.1,
+        rating: 4.7,
         // imgUrl: courseImg1,
     },
 
@@ -18,8 +18,8 @@ const quizsList = [
         id: "02",
         title: "Электронные приборные системы 2",
         lesson: 10,
-        students: 12.5,
-        rating: 5.9,
+        students: 2.75,
+        rating: 4.4,
         // imgUrl: courseImg2,
     },
 
@@ -27,8 +27,8 @@ const quizsList = [
         id: "03",
         title: "Электронные приборные системы 3",
         lesson: 10,
-        students: 12.5,
-        rating: 5.9,
+        students: 2.2,
+        rating: 4.6,
         // imgUrl: courseImg3,
     },
 ];

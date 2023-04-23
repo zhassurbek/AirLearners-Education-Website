@@ -19,10 +19,10 @@ const HeroSection = () => {
                                 <br/>
                                 для себя.
                             </h2>
-                            <p className="mb-5">
-                                Lorem ipsum dolor sit amet consectetur <br/> adipisicing elit.
-                                Aut saepe voluptatum earum delectus <br/> deserunt id iste,
-                                quas officiis et repellat!
+                            <p className="mb-5" style={{fontSize: '20px'}}>
+                               Учитесь на нашей платформе и станьте <br/> одним из качественных кадров в сфере авиации.
+                                <br/>
+                                У вас будет доступ к: курсам, тестам-викторинам!
                             </p>
                         </div>
                         {/*<div className="search">*/}

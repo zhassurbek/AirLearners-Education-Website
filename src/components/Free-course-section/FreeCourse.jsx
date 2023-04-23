@@ -14,31 +14,31 @@ const freeCourseData = [
     id: "01",
     title: "Курс 1",
     imgUrl: courseImg01,
-    students: 5.3,
-    rating: 1.7,
+    students: 2.3,
+    rating: 4.6,
   },
   {
     id: "02",
     title: "Курс 2",
     imgUrl: courseImg02,
-    students: 5.3,
-    rating: 1.7,
+    students: 2.1,
+    rating: 4.4,
   },
 
   {
     id: "03",
     title: "Курс 3",
     imgUrl: courseImg03,
-    students: 5.3,
-    rating: 1.7,
+    students: 1.9,
+    rating: 4.5,
   },
 
   {
     id: "04",
     title: "Курс 4",
     imgUrl: courseImg04,
-    students: 5.3,
-    rating: 1.7,
+    students: 1.4,
+    rating: 4.7,
   },
 ];
 

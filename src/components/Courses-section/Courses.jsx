@@ -11,27 +11,27 @@ const coursesData = [
     {
         id: "01",
         title: "Course 1",
-        lesson: 12,
-        students: 12.5,
-        rating: 5.9,
+        lesson: 8,
+        students: 3.2,
+        rating: 4.9,
         imgUrl: courseImg1,
     },
 
     {
         id: "02",
         title: "Course 2",
-        lesson: 12,
-        students: 12.5,
-        rating: 5.9,
+        lesson: 5,
+        students: 2.1,
+        rating: 4.8,
         imgUrl: courseImg2,
     },
 
     {
         id: "03",
         title: "Course 3",
-        lesson: 12,
-        students: 12.5,
-        rating: 5.9,
+        lesson: 7,
+        students: 1.7,
+        rating: 4.95,
         imgUrl: courseImg3,
     },
 ];
