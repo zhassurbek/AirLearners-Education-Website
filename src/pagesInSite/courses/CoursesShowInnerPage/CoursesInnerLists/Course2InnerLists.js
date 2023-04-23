@@ -1,5 +1,6 @@
-import React from "react";
-import { Card, ListGroup } from "react-bootstrap";
+import React, { useState } from "react";
+import { Button, Card, ListGroup } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const courses = [
     {
@@ -21,6 +22,12 @@ const courses = [
 ];
 
 const Course1InnerInMainPage = () => {
+    const [isCompleted, setIsCompleted] = useState(false);
+
+    const handleOnClick = () => {
+        setIsCompleted(true);
+    };
+
     return (
         <ListGroup>
             {courses.map((course, index) => (
@@ -30,6 +37,11 @@ const Course1InnerInMainPage = () => {
                         <Card.Body>
                             <Card.Title>{course.title}</Card.Title>
                             <Card.Text>{course.description}</Card.Text>
+                            {!isCompleted && (
+                                <Link to={`/course/02/lesson${index + 1}`}>
+                                    <Button>Перейти</Button>
+                                </Link>
+                            )}
                         </Card.Body>
                     </Card>
                 </ListGroup.Item>
