@@ -1,4 +1,3 @@
-
 import {Col, Container, Row} from "reactstrap";
 import {Link} from "react-router-dom";
 import React from "react";

@@ -1,11 +1,11 @@
 .quiz2test {
- margin: 30px;
- padding: 20px;
- max-width: 800px;
- display: flex;
- flex-direction: column;
- border: 1px solid black;
- border-radius: 10px;
- /*justify-content: center;*/
- /*align-items: center;*/
+    margin: 30px;
+    padding: 20px;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 10px;
+    /*justify-content: center;*/
+    /*align-items: center;*/
 }

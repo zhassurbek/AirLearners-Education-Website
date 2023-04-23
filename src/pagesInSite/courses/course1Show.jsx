@@ -1,8 +1,8 @@
 import React, { Fragment } from "react";
 
-import Course1InnerInMainPage from "./Course1InnerInMainPage";
-import Header from "../../../components/Header/Header";
-import Footer from "../../../components/Footer/Footer";
+import Course1InnerInMainPage from "./coursesList/Course1InnerInMainPage";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 
 
 const Home = () => {

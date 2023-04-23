@@ -1,7 +1,8 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 const CourseCard = (props) => {
-    const {imgUrl, title, lesson, students, rating} = props.item;
+    const {id, imgUrl, title, lesson, students, rating} = props.item;
 
     return (
         <div class="container">
@@ -31,7 +32,8 @@ const CourseCard = (props) => {
                             </p>
 
                             <p className="enroll d-flex align-items-center gap-1">
-                                <a href="#"> Зарегистрироваться сейчас</a>
+                                {/*<a href="#"> Зарегистрироваться сейчас</a>*/}
+                                <Link to={`/course/${id}`}> Зарегистрироваться сейчас</Link>
                             </p>
                         </div>
                     </div>

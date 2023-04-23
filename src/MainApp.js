@@ -3,13 +3,16 @@ import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Home from "./pages/Home";
 import Courses from "./pagesInSite/courses/CoursesPage";
 import Tests from "./pagesInSite/Tests/Tests";
-import CoursesList1 from "./pagesInSite/courses/coursesList/course1Show";
+import CoursesList1 from "./pagesInSite/courses/course1Show";
 
 import Quizs from "./pagesInSite/Tests/quiz/QuizsPage";
 import Quiz2Test from "./quiz2Test/Quiz2Test";
 import Quiz2Show from "./quiz2Test/forShowsQuizs/Quiz2Show";
 import Quiz1Show from "./quiz2Test/forShowsQuizs/Quiz1Show";
 import Quiz3Show from "./quiz2Test/forShowsQuizs/Quiz3Show";
+import Course1InnerPageShow from "./pagesInSite/courses/CoursesShowInnerPage/Course1InnerPageShow";
+import Course3InnerPageShow from "./pagesInSite/courses/CoursesShowInnerPage/Course3InnerPageShow";
+import Course2InnerPageShow from "./pagesInSite/courses/CoursesShowInnerPage/Course2InnerPageShow";
 
 
 const MainApp = () => {
@@ -28,6 +31,11 @@ const MainApp = () => {
                 <Route path="/quiz/01" component={Quiz1Show} />
                 <Route path="/quiz/02" component={Quiz2Show} />
                 <Route path="/quiz/03" component={Quiz3Show} />
+
+                {/* Route when click on Courses for courses*/}
+                <Route path="/course/01" component={Course1InnerPageShow} />
+                <Route path="/course/02" component={Course2InnerPageShow} />
+                <Route path="/course/03" component={Course3InnerPageShow} />
             </Switch>
         </Router>
     );
