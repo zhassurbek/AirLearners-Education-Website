@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 
-import Course1List from "./Course1List";
+import Course1InnerInMainPage from "./Course1InnerInMainPage";
 import Header from "../../../components/Header/Header";
 import Footer from "../../../components/Footer/Footer";
 
@@ -9,7 +9,7 @@ const Home = () => {
     return (
         <Fragment>
             <Header />
-            <Course1List />
+            <Course1InnerInMainPage />
             {/*<HeroSection />*/}
             {/*<CompanySection />*/}
             {/*<AboutUs />*/}

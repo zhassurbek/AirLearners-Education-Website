@@ -20,7 +20,7 @@ const courses = [
     },
 ];
 
-const Course1List = () => {
+const Course1InnerInMainPage = () => {
     return (
         <ListGroup>
             {courses.map((course, index) => (
@@ -38,4 +38,4 @@ const Course1List = () => {
     );
 };
 
-export default Course1List;
+export default Course1InnerInMainPage;

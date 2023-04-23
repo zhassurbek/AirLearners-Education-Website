@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Home from "./pages/Home";
 import Courses from "./pagesInSite/courses/CoursesPage";
 import Tests from "./pagesInSite/Tests/Tests";
-import CoursesList1 from "./pagesInSite/courses/coursesList/course1";
+import CoursesList1 from "./pagesInSite/courses/coursesList/course1Show";
 
 import Quizs from "./pagesInSite/Tests/quiz/QuizsPage";
 import Quiz2Test from "./quiz2Test/Quiz2Test";
