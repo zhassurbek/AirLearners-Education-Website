@@ -28,7 +28,7 @@ const navLinks = [
     },
     {
         display: "Учебники",
-        url: "",
+        url: "/textbooks",
         to: "choose-us",
         scrollId: ""
     },
@@ -38,8 +38,8 @@ const navLinks = [
         scrollId: "l"
     },
     {
-        display: "Курс 1",
-        url: "course1",
+        display: "AskMe",
+        url: "/ask-me",
         scrollId: ""
     },
 ];
@@ -75,7 +75,7 @@ const Header = () => {
 
                         <div className="nav__right">
                             <p className="mb-0 d-flex align-items-center gap-2">
-                                <i class="ri-phone-line"></i> +7 777 777 77 77
+                                <i class="ri-phone-line"></i> Связаться с нами
                             </p>
                         </div>
                     </div>

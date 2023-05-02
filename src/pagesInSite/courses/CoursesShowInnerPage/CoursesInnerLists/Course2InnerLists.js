@@ -38,9 +38,14 @@ const Course1InnerInMainPage = () => {
                             <Card.Title>{course.title}</Card.Title>
                             <Card.Text>{course.description}</Card.Text>
                             {!isCompleted && (
-                                <Link to={`/course/02/lesson${index + 1}`}>
+                                <Link to={`/lesson${index + 1}`}>
                                     <Button>Перейти</Button>
                                 </Link>
+                            //     <p className="enroll d-flex align-items-center gap-1">
+                            // {/*<a href="#"> Зарегистрироваться сейчас</a>*/}
+                            //     <Link to={`/course/${id}`}> Зарегистрироваться сейчас</Link>
+                            //     </p>
+
                             )}
                         </Card.Body>
                     </Card>

@@ -121,7 +121,7 @@ const Footer = () => {
 
             <p>Адрес: Алматы</p>
             <p> Телефон: +7 777 777 77 77 </p>
-            <p>Почта: timur@gmail.com</p>
+            <p>Почта: airlearners@gmail.com</p>
           </Col>
         </Row>
       </Container>

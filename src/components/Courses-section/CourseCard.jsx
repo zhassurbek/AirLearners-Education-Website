@@ -33,8 +33,7 @@ const CourseCard = (props) => {
 
                             <p className="enroll d-flex align-items-center gap-1">
                                 {/*<a href="#"> Зарегистрироваться сейчас</a>*/}
-                                {/*<Link to={`/course/${id}`}> Зарегистрироваться сейчас</Link>*/}
-                                <Link to={`/course/${id}`}>Зарегистрироваться сейча</Link>
+                                <Link to={`/course/${id}`}> Зарегистрироваться сейчас</Link>
                             </p>
                         </div>
                     </div>

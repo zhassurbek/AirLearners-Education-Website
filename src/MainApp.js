@@ -14,6 +14,8 @@ import Course1InnerPageShow from "./pagesInSite/courses/CoursesShowInnerPage/Cou
 import Course3InnerPageShow from "./pagesInSite/courses/CoursesShowInnerPage/Course3InnerPageShow";
 import Course2InnerPageShow from "./pagesInSite/courses/CoursesShowInnerPage/Course2InnerPageShow";
 import Lesson1Page from "./pagesInSite/courses/CoursesShowInnerPage/CoursesInnerLists/lessonPages/Lesson1Page";
+import TextBooksShow from "./booksForDownload/TextBooksShow";
+import AskMeShow from "./AskMe/AskMeShow";
 
 
 const MainApp = () => {
@@ -42,6 +44,9 @@ const MainApp = () => {
 
                 <Route exact path="/lesson/01" component={Lesson1Page} />
 
+                {/*page textBooks for download*/}
+                <Route exact path="/textbooks" component={TextBooksShow} />
+
 
 
                 {/* For full-courses page rendering for courses */}
@@ -51,6 +56,10 @@ const MainApp = () => {
 
                 {/* Inner Page Lessons from Courses */}
                 <Route exact path="/course/01/lesson1" component={Quiz2Show} />
+
+                {/*AskMe ChatBot*/}
+                <Route exact path="/ask-me" component={AskMeShow} />
+
             </Switch>
         </Router>
     );

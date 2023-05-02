@@ -1,6 +1,6 @@
 import React from "react";
 import {Container, Row, Col} from "reactstrap";
-import courseImg1 from "../../assests/images/web-design.png";
+import courseImg1 from "../../assests/images/samolyotcopy.jpeg";
 import courseImg2 from "../../assests/images/graphics-design.png";
 import courseImg3 from "../../assests/images/ui-ux.png";
 import "./courses.css";
@@ -10,7 +10,7 @@ import {Link} from "react-router-dom";
 const coursesData = [
     {
         id: "01",
-        title: "Course 1",
+        title: "Цифровая техника. Электронные приборные системы",
         lesson: 8,
         students: 3.2,
         rating: 4.9,
@@ -19,7 +19,7 @@ const coursesData = [
 
     {
         id: "02",
-        title: "Course 2",
+        title: "Системы нумерации",
         lesson: 5,
         students: 2.1,
         rating: 4.8,
@@ -28,7 +28,7 @@ const coursesData = [
 
     {
         id: "03",
-        title: "Course 3",
+        title: "Преобразование данных",
         lesson: 7,
         students: 1.7,
         rating: 4.95,
