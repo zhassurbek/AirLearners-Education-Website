@@ -17,6 +17,11 @@ import Lesson1Page from "./pagesInSite/courses/CoursesShowInnerPage/CoursesInner
 import TextBooksShow from "./booksForDownload/TextBooksShow";
 import AskMeShow from "./AskMe/AskMeShow";
 import BlogListShow from "./Blogs/BlogListShow";
+import Blog1InnerPage from "./Blogs/InnerPagesBlogs/Blog1InnerPage";
+import Blog1InnerPageShow from "./Blogs/InnerPagesBlogs/Blog1InnerPageShow";
+import Blog2InnerPageShow from "./Blogs/InnerPagesBlogs/Blog2InnerPageShow";
+import Blog3InnerPageShow from "./Blogs/InnerPagesBlogs/Blog3InnerPageShow";
+import Blog4InnerPageShow from "./Blogs/InnerPagesBlogs/Blog4InnerPageShow";
 
 
 const MainApp = () => {
@@ -63,6 +68,12 @@ const MainApp = () => {
 
                 {/*Blogs page*/}
                 <Route exact path="/blogs" component={BlogListShow} />
+
+                {/*inner page blogs*/}
+                <Route exact path="/blog/1" component={Blog1InnerPageShow} />
+                <Route exact path="/blog/2" component={Blog2InnerPageShow} />
+                <Route exact path="/blog/3" component={Blog3InnerPageShow} />
+                <Route exact path="/blog/4" component={Blog4InnerPageShow} />
             </Switch>
         </Router>
     );

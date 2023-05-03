@@ -35,7 +35,7 @@ const DocumentsList = () => {
                             }}>PDF
                             </div>
                             <a href={doc.url} target="_blank" rel="noopener noreferrer"
-                               style={{color: 'orange', display: 'inline'}}>
+                               style={{color: 'orange', display: 'inline', textDecoration: 'none'}}>
                                {/*style={{color: 'rgba(0,105,255,0.72)', display: 'inline'}}>*/}
                                 {doc.name}
                             </a>
