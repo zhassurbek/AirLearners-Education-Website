@@ -16,6 +16,7 @@ import Course2InnerPageShow from "./pagesInSite/courses/CoursesShowInnerPage/Cou
 import Lesson1Page from "./pagesInSite/courses/CoursesShowInnerPage/CoursesInnerLists/lessonPages/Lesson1Page";
 import TextBooksShow from "./booksForDownload/TextBooksShow";
 import AskMeShow from "./AskMe/AskMeShow";
+import BlogListShow from "./Blogs/BlogListShow";
 
 
 const MainApp = () => {
@@ -60,6 +61,8 @@ const MainApp = () => {
                 {/*AskMe ChatBot*/}
                 <Route exact path="/ask-me" component={AskMeShow} />
 
+                {/*Blogs page*/}
+                <Route exact path="/blogs" component={BlogListShow} />
             </Switch>
         </Router>
     );

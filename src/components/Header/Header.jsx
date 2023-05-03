@@ -34,8 +34,8 @@ const navLinks = [
     },
     {
         display: "Блоги",
-        url: "#",
-        scrollId: "l"
+        url: "/blogs",
+        scrollId: ""
     },
     {
         display: "AskMe",
