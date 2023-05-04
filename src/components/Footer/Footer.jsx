@@ -64,28 +64,28 @@ const Footer = () => {
               <p className="mb-0">Следите за нами в социальных сетях</p>
               <span>
                 {" "}
-                <a href="facebook.com">
+                <a href="https://facebook.com/">
                   <i class="ri-facebook-line"></i>
                 </a>
               </span>
 
               <span>
                 {" "}
-                <a href="facebook.com">
+                <a href="https://instagram.com/">
                   <i class="ri-instagram-line"></i>
                 </a>
               </span>
 
               <span>
                 {" "}
-                <a href="facebook.com">
+                <a href="https://www.linkedin.com/">
                   <i class="ri-linkedin-line"></i>
                 </a>
               </span>
 
               <span>
                 {" "}
-                <a href="facebook.com">
+                <a href="https://twitter.com/">
                   <i class="ri-twitter-line"></i>
                 </a>
               </span>

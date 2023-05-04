@@ -6,9 +6,6 @@ const Lesson1Page = (props) => {
     return (
         <div class="container">
             <div className="single__course__item">
-                {/*<div className="course__img">*/}
-                {/*    <img src={imgUrl} alt="" className="w-100"/>*/}
-                {/*</div>*/}
 
                 <div className="course__details">
                     <div className="title_style">

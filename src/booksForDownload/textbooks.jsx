@@ -22,7 +22,7 @@ const DocumentsList = () => {
         <Container style={{marginTop: '50px', marginBottom: '50px', borderRadius: '50px'}}>
             <section>
                 <div>
-                    <h1>Список документов</h1>
+                    <h1 className="h1TextBooks">Список документов</h1>
                     {documents.map((doc, index) => (
                         <div className="div-documents" key={index} style={{margin: '20px'}}>
                             <div style={{

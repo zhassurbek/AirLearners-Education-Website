@@ -2,6 +2,7 @@ import {Col, Container, Row} from "reactstrap";
 import {Link} from "react-router-dom";
 import React from "react";
 import QuizCard from "./QuizCard";
+import "./quiz1.css"
 
 const quizsList = [
     {

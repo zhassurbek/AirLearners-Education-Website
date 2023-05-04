@@ -5,7 +5,7 @@ import Courses from "./pagesInSite/courses/CoursesPage";
 import Tests from "./pagesInSite/Tests/Tests";
 import CoursesList1 from "./pagesInSite/courses/course1Show";
 
-import Quizs from "./pagesInSite/Tests/quiz/QuizsPage";
+import Quizs from "./pagesInSite/Tests/./quizВнутренняячерезкнопки/QuizsPage";
 import Quiz2Test from "./quiz2Test/Quiz2Test";
 import Quiz2Show from "./quiz2Test/forShowsQuizs/Quiz2Show";
 import Quiz1Show from "./quiz2Test/forShowsQuizs/Quiz1Show";
