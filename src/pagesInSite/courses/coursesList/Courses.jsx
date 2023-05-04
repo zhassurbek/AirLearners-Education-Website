@@ -10,7 +10,7 @@ import CourseCard from "./CourseCard";
 const coursesData = [
     {
         id: "01",
-        title: "Цифровая техника. Электронные приборные системы",
+        title: "Цифровая техника",
         lesson: 8,
         students: 3.2,
         rating: 4.9,
