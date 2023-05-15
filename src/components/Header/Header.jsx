@@ -82,7 +82,8 @@ const Header = () => {
                         <div className="nav__right">
                             <p class="ri-phone-line"  className="mb-0 d-flex align-items-center justify-content-center gap-2">
                                 <a style={{ textDecoration: 'none' }} href="https://t.me/+LI_41bZKWX5kY2Iy" target="_blank" rel="noopener noreferrer">
-                                    <i ></i> <span  style={{fontSize: '20px', color: 'rgba(0,0,0,0.96)', fontWeight: 'bolder'}}>Связаться с нами</span>
+                                    <i ></i> <span  style={{fontSize: '20px', color: '#17bf9e', fontWeight: 'bolder'}}>Связаться с нами</span>
+                                    {/*<i ></i> <span  style={{fontSize: '20px', color: 'rgba(0,0,0,0.96)', fontWeight: 'bolder'}}>Связаться с нами</span>*/}
                                 </a>
                             </p>
                         </div>
