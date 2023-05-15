@@ -18,12 +18,13 @@ const navLinks = [
 
     {
         display: "Курсы",
-        url: "#courses",
+        url: "/full-courses",
         scrollId: ""
     },
     {
         display: "Тесты",
-        url: "#quizs-List-Page",
+        url: "/full-quizs",
+        // url: "#quizs-List-Page",
         scrollId: ""
     },
     {
@@ -33,7 +34,7 @@ const navLinks = [
         scrollId: ""
     },
     {
-        display: "Блоги",
+        display: "Блог",
         url: "/blogs",
         scrollId: ""
     },

@@ -71,7 +71,7 @@ const ChatbotApp = () => {
                         <textarea
                             type="text"
                             value={prompt}
-                            placeholder="Please ask OpenAI"
+                            placeholder="Спросите у ИИ"
                             onChange={(e) => setPrompt(e.target.value)}
                             style={{
                                 width: "100%",
@@ -98,7 +98,7 @@ const ChatbotApp = () => {
                                     fontWeight: "bold",
                                 }}
                             >
-                                {loading ? "Generating..." : "Generate"}
+                                {loading ? "Генерируется..." : "Сгенерировать"}
                             </button>
                         </form>
                     </div>
