@@ -1,6 +1,8 @@
 import React from "react";
 import {Link} from "react-router-dom";
 
+// внутренняя страница курсов, при нажатии в header на курсы вызывается этот компонент
+
 const CourseCard = (props) => {
     const {id, imgUrl, title, lesson, students, rating} = props.item;
 
@@ -13,7 +15,7 @@ const CourseCard = (props) => {
 
                 <div className="course__details">
                     <div className="title_style">
-                        <h6 className="course__title mb-4">{title}</h6>
+                        <p style={{fontSize: '20px', fontWeight: 'bold', color: 'black'}} className="course__title mb-4">{title}</p>
                     </div>
                     <div>
                         <div className=" d-flex justify-content-between align-items-center">
