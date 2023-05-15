@@ -74,11 +74,20 @@ const Header = () => {
                             </ul>
                         </div>
 
+                        {/*<div className="nav__right">*/}
+                        {/*    <p className="mb-0 d-flex align-items-center gap-2">*/}
+                        {/*        <i class="ri-phone-line"></i> Связаться с нами*/}
+                        {/*    </p>*/}
+                        {/*</div>*/}
                         <div className="nav__right">
-                            <p className="mb-0 d-flex align-items-center gap-2">
-                                <i class="ri-phone-line"></i> Связаться с нами
+                            <p class="ri-phone-line"  className="mb-0 d-flex align-items-center justify-content-center gap-2">
+                                <a style={{ textDecoration: 'none' }} href="https://t.me/+LI_41bZKWX5kY2Iy" target="_blank" rel="noopener noreferrer">
+                                    <i ></i> <span  style={{fontSize: '20px', color: 'rgba(0,0,0,0.96)', fontWeight: 'bolder'}}>Связаться с нами</span>
+                                </a>
                             </p>
                         </div>
+
+
                     </div>
 
                     <div className="mobile__menu">
