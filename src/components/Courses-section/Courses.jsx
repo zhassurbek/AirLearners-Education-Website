@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {Container, Row, Col} from "reactstrap";
 import courseImg1 from "../../assests/images/samolyotcopy.jpeg";
 import courseImg2 from "../../assests/images/graphics-design.png";
@@ -37,6 +37,9 @@ const coursesData = [
 ];
 
 const Courses = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0); // Прокрутка страницы вверх при загрузке страницы
+    }, []);
     return (
         <section>
             <Container>

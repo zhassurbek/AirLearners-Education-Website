@@ -71,7 +71,8 @@ const BlogList = ({blogs}) => {
                                     <CardBody>
                                         <CardTitle>{blog.title}</CardTitle>
                                         <CardText>{`${blog.description.substring(0, 100)}...`}</CardText>
-                                        <a style={{color: '#ffffff', backgroundColor: '#00ab1e', borderRadius: '5px', textDecoration: 'none', padding: '8px', display: 'block', textAlign: 'center'}} href={`/blog/${blog.id}`}>Подробнее</a>
+                                        <a style={{color: '#ffffff', backgroundColor: '#5bbeaa', borderRadius: '5px', textDecoration: 'none', padding: '8px', display: 'block', textAlign: 'center'}} href={`/blog/${blog.id}`}>Подробнее</a>
+                                        {/*<a style={{color: '#ffffff', backgroundColor: '#00ab1e', borderRadius: '5px', textDecoration: 'none', padding: '8px', display: 'block', textAlign: 'center'}} href={`/blog/${blog.id}`}>Подробнее</a>*/}
                                     </CardBody>
                                 </Card>
                             </Col>

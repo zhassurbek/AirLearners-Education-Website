@@ -87,7 +87,8 @@ const ChatbotApp = () => {
                                 disabled={loading || prompt.length === 0}
                                 type="submit"
                                 style={{
-                                    backgroundColor: "rgba(71,255,255,0.76)",
+                                    backgroundColor: '#81e5cf',
+                                    // backgroundColor: "rgba(71,255,255,0.76)",
                                     color: "black",
                                     padding: "10px 20px",
                                     margin: "10px 0",

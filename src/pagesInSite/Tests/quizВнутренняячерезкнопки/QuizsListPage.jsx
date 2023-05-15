@@ -1,6 +1,6 @@
 import {Col, Container, Row} from "reactstrap";
 import {Link} from "react-router-dom";
-import React from "react";
+import React, {useEffect} from "react";
 import QuizCard from "./QuizCard";
 import "./quiz1.css"
 
@@ -34,6 +34,9 @@ const quizsList = [
 ];
 
 const QuizsList = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0); // Прокрутка страницы вверх при загрузке компонента
+    }, []);
     return (
         <section>
             <Container>

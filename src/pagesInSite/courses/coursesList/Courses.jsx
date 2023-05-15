@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {Container, Row, Col} from "reactstrap";
 import courseImg1 from "../../../assests/images/samolyotcopy.jpeg"
 import courseImg2 from "../../../assests/images/graphics-design.png"
