@@ -7,42 +7,42 @@ const Company = () => {
             <Container>
                 <Row>
                     <Col lg="2" md="3" sm="4" xs="6">
-                        <h3 className=" d-flex align-items-center gap-1">
+                        <h4 className=" d-flex align-items-center gap-1">
                             <i className="jam ri-plane-line"></i>
                             Air <br/> Astana
-                        </h3>
+                        </h4>
                     </Col>
                     <Col lg="2" md="3" sm="4" xs="6">
-                        <h3 className=" d-flex align-items-center gap-1">
+                        <h4 className=" d-flex align-items-center gap-1">
                             <i className="jam ri-plane-line"></i>
                             Qatar Airways
-                        </h3>
+                        </h4>
                     </Col>
 
                     <Col lg="2" md="3" sm="4" xs="6">
-                        <h3 className=" d-flex align-items-center gap-1">
+                        <h4 className=" d-flex align-items-center gap-1">
                             <i class="jam jam-plane-f"></i> Singapore Airlines
-                        </h3>
+                        </h4>
                     </Col>
 
                     <Col lg="2" md="3" sm="4" xs="6">
-                        <h3 className=" d-flex align-items-center gap-1">
+                        <h4 className=" d-flex align-items-center gap-1">
                             <i class="jam ri-send-plane-2-fill"></i> Fly Emirates
-                        </h3>
+                        </h4>
                     </Col>
 
                     <Col lg="2" md="3" sm="4" xs="6">
-                        <h3 className=" d-flex align-items-center gap-1">
+                        <h4 className=" d-flex align-items-center gap-1">
                             {" "}
                             <i class="ri-send-plane-2-line"></i> All Nippon Airways
-                        </h3>
+                        </h4>
                     </Col>
 
                     <Col lg="2" md="3" sm="4" xs="6">
-                        <h3 className=" d-flex align-items-center gap-1">
+                        <h4 className=" d-flex align-items-center gap-1">
                             {" "}
                             <i class="jam jam-plane"></i> Fly <br/>Arystan
-                        </h3>
+                        </h4>
                     </Col>
 
                     {/*<Col lg="2" md="3" sm="4" xs="6">*/}
