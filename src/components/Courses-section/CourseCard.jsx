@@ -22,7 +22,8 @@ const CourseCard = (props) => {
                             </p>
 
                             <p className="students d-flex align-items-center gap-1">
-                                <i class="ri-user-line"></i> {students}K
+                                <i style={{fontSize: '18px'}} class="ri-user-line"></i> {students}K
+                                {/*<i class="ri-user-line"></i> {students}K*/}
                             </p>
                         </div>
 
