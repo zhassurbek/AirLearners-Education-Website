@@ -14,27 +14,27 @@ const CourseCard = (props) => {
 
                     <div className="course__details">
                         <div className="title_style">
-                            <h6 className="course__title mb-4">{title}</h6>
+                            <p style={{fontSize: '21px', fontWeight: 'bolder', color: 'black'}} className="course__title mb-4">{title}</p>
                         </div>
                         <div>
                             <div className=" d-flex justify-content-between align-items-center">
-                                <p className="lesson d-flex align-items-center gap-1">
+                                <p style={{fontSize: '18px'}} className="lesson d-flex align-items-center gap-1">
                                     <i class="ri-book-open-line"></i> {lesson} Уроков
                                 </p>
 
-                                <p className="students d-flex align-items-center gap-1">
+                                <p style={{fontSize: '18px'}} className="students d-flex align-items-center gap-1">
                                     <i class="ri-user-line"></i> {students}K
                                 </p>
                             </div>
 
                             <div className=" d-flex justify-content-between align-items-center">
-                                <p className="rating d-flex align-items-center gap-1">
+                                <p style={{fontSize: '16px'}} className="rating d-flex align-items-center gap-1">
                                     <i class="ri-star-fill"></i> {rating}
                                 </p>
 
                                 <p className="enroll d-flex align-items-center gap-1">
                                     {/*<a href="#"> Зарегистрироваться сейчас</a>*/}
-                                    <Link to={`/course/${id}`}> Пройти на курс</Link>
+                                    <Link style={{fontSize: '18px'}} to={`/course/${id}`}> Пройти на курс</Link>
                                 </p>
                             </div>
                         </div>

@@ -15,7 +15,7 @@ const CourseCard = (props) => {
 
                 <div className="course__details">
                     <div className="title_style">
-                        <p style={{fontSize: '20px', fontWeight: 'bold', color: 'black'}} className="course__title mb-4">{title}</p>
+                        <p style={{fontSize: '21px', fontWeight: 'bolder', color: 'black'}} className="course__title mb-4">{title}</p>
                     </div>
                     <div>
                         <div className=" d-flex justify-content-between align-items-center">

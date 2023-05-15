@@ -53,7 +53,7 @@ const Courses = () => {
 
                             <div className="w-50 text-end">
                                 <Link to="/full-courses">
-                                    <button className="btn">Показать все</button>
+                                    <button className="btn">Показать все курсы</button>
                                 </Link>
                             </div>
                         </div>
