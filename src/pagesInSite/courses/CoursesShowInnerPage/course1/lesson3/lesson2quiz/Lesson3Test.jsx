@@ -14,32 +14,32 @@ function Lesson3Test() {
 
     const questions = [
         {
-            question: "1.  test to lesson 3 Второй тест первого курса второго урока е EADI?",
-            options: ["Голубой", "Пурпурный", "Красный"],
-            answer: "Пурпурный"
+            question: "1. On an EFIS system the weather radar is displayed on.",
+            options: ["the FMC CDU.", "the EADI.", "the EHSI."],
+            answer: "the EHSI."
         },
 
         {
-            question: "2. У систем EFIS две панели управления, какова их цель?",
-            options: ["Одна для управления типом дисплея EFIS, а другая для выбора источника отображаемой информации.", "Одна для дисплея EADI, а другая для дисплея EHSI.", "Одна для управления дисплеем, а другая для резерва."],
-            answer: "Одна для управления типом дисплея EFIS, а другая для выбора источника отображаемой информации."
+            question: "2. EADI displays show.",
+            options: ["pitch, roll and waypoints.", "pitch and roll attitudes.", "heading and weather radar."],
+            answer: "pitch and roll attitudes."
         },
 
         {
-            question: "3. Что вы ожидаете увидеть на дисплее EADI?",
-            options: ["Курсовую информацию, метеорадар, предупреждение о точке маршрута и индикаторы направления.", "Показания компаса, выбранный курс и VOR.", "Команды директора полета, индикатор поперечного наклона, скорость до высоты и автоматическую посадку"],
-            answer: "Команды директора полета, индикатор поперечного наклона, скорость до высоты и автоматическую посадку"
+            question: "3. On an EHSI in weather radar mode, a severe storm would be shown as.",
+            options: ["orange areas with black or yellow surrounds.", "red areas with black surrounds", "blue areas with white background."],
+            answer: "red areas with black surrounds"
         },
 
         {
-            question: "4. На дисплее EADI отображаются?",
-            options: ["Угол тангажа, угол крена и точки маршрута", "Угол тангажа и угол крена", "Курс и метеорологический радар"],
-            answer: "Угол тангажа и угол крена"
+            question: "4. Radio altitude is displayed on an EFIS system.",
+            options: ["on the Electronic Horizontal Situation Indicator.", "on the Electronic Attitude Direction Indicator.", "on the RMI.р"],
+            answer: "on the Electronic Attitude Direction Indicator."
         },
         {
-            question: "5. Что отображается на экране EHSI в режиме карты?",
-            options: ["Курс, скорость и высота", "Карта с маршрутом", "Направление ветра и аэропорты"],
-            answer: "Карта с маршрутом"
+            question: "5. The EFIS system consists of.",
+            options: ["EHSI, Mode control panel, EADI.а", "EADI, EHSI, Symbol generators.", "Mode control Panel, RDMI, EHSI."],
+            answer: "EADI, EHSI, Symbol generators."
         },
     ];
 
