@@ -10,26 +10,29 @@ import {Link} from "react-router-dom";
 const LessonPage = () => {
     const [showVideo, setShowVideo] = useState(false);
     const [lessonName, setLessonName] = useState('LESSON 2. ELECTRONIC DISPLAYS AND ELECTRONIC FLIGHT INSTRUMENT SYSTEM');
-    const [videoUrl, setVideoUrl] = useState('https://youtu.be/jYqEPBm5z8Q');
+    const [videoUrl, setVideoUrl] = useState('https://youtu.be/6wxS3bfmiDw');
     const [lessonDescription2, setlessonDescription2] = useState('');
     const [lessonDescription, setLessonDescription] =
         useState('' +
             '<div>\n' +
-            '  <h2>ELECTRONIC DISPLAYS</h2>\n' +
+            '  <h2>BINARY NUMBER SYSTEM CONVERSION </h2>\n' +
+
             ' <div style={{textAlign: \'center\'}}>\n' +
             '</div>\n ' +
-            '<br>  <p>The early EIS displays mimicked the analog display formats for ease in pilot training as the crew transitioned from older analog displays to digital displays that were driven by aircraft data computers, known as display processors or symbol generators. Figure 1-3 depicts an early model Boeing 737 instrument panel with an analog Attitude Direction Indicator (ADI) and analog Horizontal Situation Display (HSI) in the left picture, and a later model B737 instrument panel with electronic ADI (EADI) and electronic HSI (EHSI) displays shown in the right picture. The ADI or EADI is an artificial horizon with lateral bars superimposed to display computer-generated pitch, roll and bank steering commands from the Flight Director computer. The HSI or EHSI is similar to a heading indicator, except that it combines navigation commands from the VHF Omni-Range (VOR) or Global Positioning System (GPS) receivers, which are used for en-route guidance, or from the Instrument Landing System (ILS), which is used for terminal guidance. Besides heading, the HSI/EHSI also provides actual track, desired track, track angle error, drift angle, cross-track deviation, and distance to destination information, from the Distance Measuring Equipment (DME) or Inertial Navigation System (INS). (Figure 1-4) The pilot and the co-pilot not only have independent EA DI and EHSI displays, but they also have independent Display Processor Units, also known as Symbol Generators, to drive their displays (Figure 1-5). Display formats a re produced by the Sy mbol Generators that receive inputs from the crew and various on-board systems. The Flight Director Systems, Navigation Systems, Air Data Systems, and Weather Radar provide inputs to the Symbol Generators, along with commands from the each crewmember’s display control panel. The Symbol Generators produce the graphics for the EADI, EHSI, and an optional Multi-Function Display (MFD) that is mounted in the center instrument panel. The MFD, which is physically identical to the EADI and EHSI, is typically used to display weather radar information; however, it can also be used to display either flight information or navigational information in the event of an EADI or EHSI failure. The following section will discuss the Boeing 777 EIS, which is a more advanced example of the one just covered. </p>\n' +
+            '<br>  <p>Each binary number column has a decimal value. To convert from decimal to binary, find the binary column that has the largest value but is equal to or smaller than the decimal number being converted. Place a 1 in that column and subtract the column value from the decimal number being converted. Look at the difference. Place a 1 in the column that has the largest value but is equal to or smaller than the decimal number difference of what was just subtracted. Now subtract this column value from the difference of the decimal number being converted and the previous column difference. If a column is not used, place a zero in it. Continue this operation until all of the binary place value columns with 1\'s, when added together, have the same value as the decimal number being converted. Write the number in binary form including a 1 or a 0 for each column. </p>\n' +
+            '<br>  <p>Example: Convert the decimal number 100₁₀ to a binary number. Use the binary place value chart in Figure 2-4 to assist in remembering the decimal equivalent value for each binary place value holder. The largest decimal number system value in a binary number system place holder that is less than or equal to 100 is 64. Thus, a 1 is paced in the 64 column (2⁶) of the binary place value chart. Subtract 64 from 100 for a difference of 36. The binary place value holder that is less than or equal to 36 is 32. Place a 1 in the 32 column (2⁵) of the binary place value chart. Subtract 32 from 36 for a difference of 4. The binary place value holder that is less than or equal to 4 is 4. Place a 1 in the 4 column (22) of the binary place value chart. Subtract 4 from 4 for a difference of 0. Since there is nothing left to be converted, place a 0 in all place value columns that do not contain a 1. Write the number using all the 1\'s and 0\'s recorded in the chart from right to left: 1100100₂ = 100₁₀</p>\n' +
+            '<br>  <p>To convert a binary number to a decimal number, simply add the column values of the binary place holders with a 1. </p>\n' +
+            '<br>  <p>Example: Convert the binary number 10010111 to a decimal number. From left to right, the base-2 values represent by each 1 in this binary number are added together: </p>\n' +
+            '<br>  <p>As can be seen, a binary number is typically much longer that its decimal equivalent. However, modern circuits have very fast switching speeds so that the length of binary numbers can be tolerated. This is especially true because of the reliability that is gained from a system that is built from components that are either 1 (ON) or 0 (OFF), that is, either have voltage or do not have voltage. </p>\n' +
+            '<br>  <p>128 + 16 + 4 + 2 + 1 = 10010111₂ = 151₁₀</p>\n' +
 
-            '  <h2>ELECTRONIC FLIGHT INSTRUMENT SYSTEM </h2>\n' +
-            ' <div style={{textAlign: \'center\'}}>\n' +
-            '</div>\n ' +
-            '<br>  <p>The Boeing 777, which first entered service in 1995, has six 8’ × 8" multi-color LCD displays as shown in Figure 1-6. The B777 EIS consists of a dual-redundant Electronic Flight Instrument Systems (EFIS) and Engine Indication and Crew Alerting System (EICAS). On the left side of the instrument panel is the Captain’s EFIS, consisting of a Primary Flight Display (PFD) located outboard and a Navigation Display (ND) located inboard. The Co-Pilot’s EFIS located on the right instrument panel has an identical PFD and ND, located outboard and inboard respectively. All the displays are interchangeable to reduce the number of required spares.</p>\n' +
-            '  <img src="https://www.stratosjets.com/wp-content/uploads/2016/03/Citation-Latitude-Cockpit-640x313.jpg" alt="pult" />\n' +
+            '  <h2>OCTAL NUMBER SYSTEM CONVERSION </h2>\n' +
 
-            '  <img src="https://www.skybrary.aero/sites/default/files/PFD_dVer1.jpg" alt="pult" />\n' +
-            '<br>  <p>The information shown on each display, whether for flight or navigation, is determined by what each crew member selects on their individual display control panels. The PFD takes the place of the EADI and displays all the information critical to flight, including attitude, airspeed, barometric altitude, vertical speed, heading, flight modes, radio altitude, ILS data, and Traffic Alert and Collision Avoidance System (TCAS) resolution advisory. The PFDs are designed to increase the crew’s situational awareness by integrating all of this information into a single composite display instead of the crew having to monitor several independent analog instruments. Also, the colors on the display change to alert the crew to potentially hazardous flight conditions, such as low airspeed, high rate of descent, etc. </p>\n' +
-            '<br>  <p>Figure 1-7 is a typical Primary Flight Display format showing the artificial horizon in the center of the display, airspeed on the left side, altitude on the right side, heading on the bottom, and flight modes on the top of the display. Notice how the moving ladder format used for altitude and airspeed provide both absolute and relative information so the crew knows not only the exact numeric value, but also the rate that the altitude and airspeed is changing. The Navigation Display, takes the place of the EHSI display to show the requisite information to navigate the aircraft, including heading, VOR, GPS, and ILS guidance. The ND has the ability to overlay additional information on the navigation page to eliminate the need for separate dedicated displays. Some examples of information that is typically overlaid on the ND include weather information from either the onboard weather radar (WXR) or ground based sensors, and digital maps showing pre-programmed routes and waypoints from the Flight Management System.</p>\n' +
-            '  <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Primary_Flight_Display_of_a_Boeing_737-800.png" alt="pult" />\n' +
+            '<br>  <p>Octal numerals can be made from binary numerals by grouping consecutive binary digits into groups of three. To convert a decimal to an octal number, begin by converting the decimal to a binary number. Then separate the binary number into groups of 3 digits starting from the right. If needed, add implied zeros to the left of the number to form complete groups of 3 digits each. Next, convert each group of 3 digits to an octal value using Figure 2-6.</p>\n' +
+            '<br>  <p>Example: Convert the decimal number 100₁₀ to an octal number by first converting it to its binary number of 001100100. Break the binary number into groups of three and convert.</p>\n' +
+            '<br>  <p>001 = 1 100 = 4 100 = 4    Octal number = 144c</p>\n' +
+            '<br>  <p>So as not to confuse an octal number of 144 with the decimal number of 100, any of the following conventions may be used either before or after the octal number. </p>\n' +
+            '<br>  <p>144₈    144base₈    oct 144    0c144   144c</p>\n' +
 
             '</div>');
     return (<section>
@@ -44,7 +47,7 @@ const LessonPage = () => {
                 <div className="choose__img_lesson">
                     {showVideo ? (
                         <ReactPlayer style={{position: 'center', paddingLeft: '100px'}}
-                                     url="https://youtu.be/jYqEPBm5z8Q"
+                                     url="https://youtu.be/6wxS3bfmiDw"
                                      controls
                                      width="100%"
                                      height="450px"
@@ -78,7 +81,7 @@ const LessonPage = () => {
                     </div>
                 }
             </div>
-            <Link to="/lesson/quiz/02" style={{margin: '20px', color: '#ffffff', backgroundColor: '#00ab1e', borderRadius: '5px', textDecoration: 'none', paddingBottom: '20px', padding: '8px', textAlign: 'center', fontSize: '25px'}}>Пройти тест</Link>
+            <Link to="/lesson/quiz/07" style={{margin: '20px', color: '#ffffff', backgroundColor: '#00ab1e', borderRadius: '5px', textDecoration: 'none', paddingBottom: '20px', padding: '8px', textAlign: 'center', fontSize: '25px'}}>Пройти тест</Link>
 
         </div>
     </section>);
