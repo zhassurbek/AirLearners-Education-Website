@@ -10,7 +10,7 @@ import Quiz2Test from "./quiz2Test/Quiz2Test";
 import Quiz2Show from "./quiz2Test/forShowsQuizs/Quiz2Show";
 import Quiz1Show from "./quiz2Test/forShowsQuizs/Quiz1Show";
 import Quiz3Show from "./quiz2Test/forShowsQuizs/Quiz3Show";
-import Course1InnerPageShow from "./pagesInSite/courses/CoursesShowInnerPage/Course1InnerPageShow";
+import Course1InnerPageShow from "./pagesInSite/courses/CoursesShowInnerPage/course1/Course1InnerPageShow";
 import Course3InnerPageShow from "./pagesInSite/courses/CoursesShowInnerPage/Course3InnerPageShow";
 import Course2InnerPageShow from "./pagesInSite/courses/CoursesShowInnerPage/Course2InnerPageShow";
 import Lesson1Page from "./pagesInSite/courses/CoursesShowInnerPage/CoursesInnerLists/lessonPages/Lesson1Page";

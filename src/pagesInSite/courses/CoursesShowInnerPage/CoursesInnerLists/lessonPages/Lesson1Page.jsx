@@ -3,7 +3,7 @@ import React, { Fragment } from "react";
 import LessonPageCard from "./LessonPageCard";
 import Header from "../../../../../components/Header/Header";
 import Footer from "../../../../../components/Footer/Footer";
-import Lesson1InnerPage from "./Lesson1InnerPage";
+import Lesson1InnerPage from "../../course1/lesson1/Lesson1InnerPage";
 
 
 
@@ -12,15 +12,6 @@ const Home = () => {
         <Fragment>
             <Header />
             <Lesson1InnerPage />
-            {/*<HeroSection />*/}
-            {/*<CompanySection />*/}
-            {/*<AboutUs />*/}
-            {/*<Courses />*/}
-            {/*<ChooseUs />*/}
-            {/*<Features />*/}
-            {/*<FreeCourse />*/}
-            {/*<Testimonials />*/}
-            {/*<Newsletter />*/}
             <Footer />
         </Fragment>
     );

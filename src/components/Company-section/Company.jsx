@@ -31,7 +31,7 @@ const Company = () => {
 
                     <Col lg="2" md="3" sm="4" xs="6">
                         <p  style={{fontSize: '25px', fontWeight: 'bold', color: 'black'}} className=" d-flex align-items-center gap-1">
-                            <i class="jam ri-send-plane-2-fill"></i> Fly Emirates
+                            <i class="jam ri-send-plane-2-fill"></i> Fly <br/> Emirates
                         </p>
                     </Col>
 

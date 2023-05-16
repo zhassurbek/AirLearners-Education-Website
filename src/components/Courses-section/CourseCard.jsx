@@ -5,7 +5,6 @@ import {Link} from "react-router-dom";
 
 const CourseCard = (props) => {
     const {id, imgUrl, title, lesson, students, rating} = props.item;
-
     return (
         <div class="container">
             <div className="single__course__item">

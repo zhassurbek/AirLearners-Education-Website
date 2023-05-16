@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
-import YouTube from 'react-youtube';
-import "./InnerLessonStyle.css"
+import "../InnerLessonStyle.css"
 import ReactPlayer from "react-player";
 import chooseImg from "../../../../../assests/images/why-choose-us.png";
 import {Col} from "reactstrap";
-import {brown} from "@mui/material/colors";
+
+// внутренняя страница первого урока
 
 const LessonPage = () => {
     const [showVideo, setShowVideo] = useState(false);

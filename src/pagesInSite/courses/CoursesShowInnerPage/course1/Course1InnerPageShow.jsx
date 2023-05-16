@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
-import Course1InnerLists from "./CoursesInnerLists/Course1InnerLists";
-import Header from "../../../components/Header/Header";
-import Footer from "../../../components/Footer/Footer";
+import Course1InnerLists from "./Course1InnerLists";
+import Header from "../../../../components/Header/Header";
+import Footer from "../../../../components/Footer/Footer";
 
 
 

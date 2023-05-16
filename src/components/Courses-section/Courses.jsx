@@ -10,7 +10,7 @@ import {Link} from "react-router-dom";
 const coursesData = [
     {
         id: "01",
-        title: "Цифровая техника",
+        title: "Система электронных приборов",
         lesson: 8,
         students: 3.2,
         rating: 4.9,

@@ -4,9 +4,11 @@ import {Link} from "react-router-dom";
 import {Col, Container} from "reactstrap";
 import CourseCard from "../../coursesList/CourseCard";
 
+
+
 const lessonsData = [
     {
-        title: "Урок 1. ОБЩИЕ СВЕДЕНИЯ О ПРИБОРНЫХ ДОСКАХ, ПУЛЬТАХ И ПАНЕЛЯХ УПРАВЛЕНИЯ 1",
+        title: "Урок 1. 2ОБЩИЕ СВЕДЕНИЯ О ПРИБОРНЫХ ДОСКАХ, ПУЛЬТАХ И ПАНЕЛЯХ УПРАВЛЕНИЯ 1",
         description: "...",
         image: "",
         lessonTitle: "",
