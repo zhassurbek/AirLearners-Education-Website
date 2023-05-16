@@ -10,8 +10,8 @@ import CourseCard from "./CourseCard";
 const coursesData = [
     {
         id: "01",
-        title: "Система электронных приборов",
-        lesson: 8,
+        title: "Electronic instrument system",
+        lesson: 3,
         students: 3.2,
         rating: 4.9,
         imgUrl: courseImg1,
@@ -19,8 +19,8 @@ const coursesData = [
 
     {
         id: "02",
-        title: "Системы нумерации",
-        lesson: 5,
+        title: "Numbering system",
+        lesson: 2,
         students: 2.1,
         rating: 4.8,
         imgUrl: courseImg2,
@@ -28,8 +28,8 @@ const coursesData = [
 
     {
         id: "03",
-        title: "Преобразование данных",
-        lesson: 7,
+        title: "Date conversion",
+        lesson: 1,
         students: 1.7,
         rating: 4.95,
         imgUrl: courseImg3,

@@ -8,7 +8,7 @@ import CourseCard from "../../coursesList/CourseCard";
 
 const lessonsData = [
     {
-        title: "Урок 1. ОБЩИЕ СВЕДЕНИЯ О ПРИБОРНЫХ ДОСКАХ, ПУЛЬТАХ И ПАНЕЛЯХ УПРАВЛЕНИЯ 1",
+        title: "Lesson 1. ANALOG AND DIGITAL INSTRUMENTS",
         description: "...",
         quizTitle: "Тест по уроку 1",
         quizDescription: "...",
@@ -18,7 +18,7 @@ const lessonsData = [
         fullDescriptionText: "",
     },
     {
-        title: "Урок 2. ОБЩИЕ СВЕДЕНИЯ О ПРИБОРНЫХ ДОСКАХ, ПУЛЬТАХ И ПАНЕЛЯХ УПРАВЛЕНИЯ 2",
+        title: "LESSON 2. ELECTRONIC DISPLAYS AND ELECTRONIC FLIGHT INSTRUMENT SYSTEM",
         description: "...",
         quizTitle: "Тест по уроку 1",
         quizDescription: "...",
@@ -28,7 +28,7 @@ const lessonsData = [
         fullDescriptionText: "",
     },
     {
-        title: "Урок 3. ОБЩИЕ СВЕДЕНИЯ О ПРИБОРНЫХ ДОСКАХ, ПУЛЬТАХ И ПАНЕЛЯХ УПРАВЛЕНИЯ 3",
+        title: "LESSON 3. ENGINE INDICATION AND CREW ALERTING SYSTEM",
         description: "...",
         image: "",
         quizTitle: "Тест по уроку 1",

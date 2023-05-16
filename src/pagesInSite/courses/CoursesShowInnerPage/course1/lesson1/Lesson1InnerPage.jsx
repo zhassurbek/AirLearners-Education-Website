@@ -4,26 +4,31 @@ import ReactPlayer from "react-player";
 import chooseImg from "../../../../../assests/images/why-choose-us.png";
 import {Col} from "reactstrap";
 import {Link} from "react-router-dom";
+import photo from "../../../../../assests/images/course1lesson1.png"
 
 // внутренняя страница первого урока
 
 const LessonPage = () => {
     const [showVideo, setShowVideo] = useState(false);
-    const [lessonName, setLessonName] = useState('Урок 1. ОБЩИЕ СВЕДЕНИЯ О ПРИБОРНЫХ ДОСКАХ, ПУЛЬТАХ И ПАНЕЛЯХ УПРАВЛЕНИЯ');
-    const [videoUrl, setVideoUrl] = useState('https://www.youtube.com/watch?v=YVKdnKH4_08');
+    const [lessonName, setLessonName] = useState('Lesson 1. ANALOG AND DIGITAL INSTRUMENTS');
+    const [videoUrl, setVideoUrl] = useState('https://youtu.be/jYqEPBm5z8Q');
     const [lessonDescription2, setlessonDescription2] = useState('');
     const [lessonDescription, setLessonDescription] =
         useState('' +
             '<div>\n' +
-            '  <h3>Приборные доски, пульты и панели управления</h3>\n' +
-            '  <p>Приборные доски, пульты и панели управления являются важными элементами электронных систем и приборов. Они используются в широком спектре приложений, начиная от авиационных и автомобильных приборных панелей до промышленных систем управления и систем безопасности.</p>\n' +
-            '  <p>Приборные доски представляют собой панели, на которых располагаются различные индикаторы, выключатели и рычаги для управления различными функциями системы. Они могут быть аналоговыми или цифровыми, в зависимости от типа приборов и системы, которой они служат. Обычно они используются в авиации, автомобильной промышленности и промышленной автоматизации.</p>\n' +
-            '  <p>Пульты управления - это устройства, которые используются для удаленного управления различными системами и оборудованием. Они могут быть проводными или беспроводными и обычно содержат кнопки, рычаги и дисплеи для отображения информации. Они широко используются в промышленности, телевизионной и радиовещательной отраслях, а также в домашних системах управления.</p>\n' +
+            '  <h2>ANALOG INSTRUMENTS</h2>\n' +
             ' <div style={{textAlign: \'center\'}}>\n' +
-            '  <img src="https://avatars.dzeninfra.ru/get-zen_doc/35845/pub_5c52ad6178e16700ac2b9c4d_5c52bd91b409f700ad08bbd1/scale_1200" alt="pult" />\n' +
+            '  <img src={photo} alt="pult" />\n' +
             '</div>\n ' +
-            '<br>  <p>Панели управления - это типично плоские панели, на которых располагаются кнопки, индикаторы, дисплеи и другие элементы управления, которые служат для контроля и управления определенными функциями системы. Они часто используются в промышленности и автоматизации, где они служат для управления множеством процессов и систем, таких как управление температурой, освещением, вентиляцией и т.д.</p>\n' +
-            '  <p>В общем, приборные доски, пульты и панели управления - это важные элементы в электронных системах и приборах, которые используются в различных областях, где необходим контроль и управление различными функциями системы.</p>\n' +
+            '<br>  <p>Instruments that aid the pilot in controlling the altitude, attitude, airspeed and heading of the aircraft are known as flight instruments. Since the early days of flight there have been four basic flight instruments that have formed the well-known "T" arrangement located in the center of the instrument panel, as shown in Figure 1-1. These four basic instruments are 1) the airspeed indicator, located on the top left, that measures the aircraft’s speed in nautical miles per hour; 2) the attitude indicator, located on top center, that shows the aircraft’s attitude relative to the earth’s horizon; 3) the altimeter, on the top right, that displays the barometric altitude as measured in feet; and 4) the gyro-slaved heading indicator, in the bottom center, which shows which direction the aircraft is flying. These 4 basic flight instruments are typically augmented with a turn-and-bank indicator that displays the rate of turn in the roll axis and amount of bank in the yaw axis, and a vertical speed indicator that displays the rate of ascent or descent in feet per minute. Assuming that the aircraft has radio navigation aids, it will also come equipped with a Radio Magnetic Indicator (RMI) coupled to an Automatic Direction Finder (ADF), and a Course Deviation Indicator (CDI) driven by VHF Omnidirectional Range (VOR) and Instrument Landing System (ILS) receivers. The ILS receiver drives the glide scope needle to set the glide path on an instrument approach and localizer needle provides lateral guidance to the center of the runway. A VHF Marker Beacon may be used in conjunction with the ILS to indicate position along the approach to the runway. These early flight instruments were analog meaning that they contained either mechanical or electro-mechanical rotating mechanisms to drive the pointer dials on the instruments. For example, an analog airspeed indicator receives air pressure from the pitot tube, which expands a bellows that turns the dial on the indicator. With a digital system, the pitot air pressure enters an air data computer that converts the analog information into a digital data stream. Digital data is then sent to the airspeed indicator via an aircraft data bus where the data is converted back into analog signals to drive a pointer dial and/or is displayed digitally in numbers. </p>\n' +
+
+            '  <h2>ANALOG INSTRUMENTS</h2>\n' +
+            ' <div style={{textAlign: \'center\'}}>\n' +
+            '  <img src={photo} alt="pult" />\n' +
+            '</div>\n ' +
+            '<br>  <p>Instruments that aid the pilot in controlling the altitude, attitude, airspeed and heading of the aircraft are known as flight instruments. Since the early days of flight there have been four basic flight instruments that have formed the well-known "T" arrangement located in the center of the instrument panel, as shown in Figure 1-1. These four basic instruments are 1) the airspeed indicator, located on the top left, that measures the aircraft’s speed in nautical miles per hour; 2) the attitude indicator, located on top center, that shows the aircraft’s attitude relative to the earth’s horizon; 3) the altimeter, on the top right, that displays the barometric altitude as measured in feet; and 4) the gyro-slaved heading indicator, in the bottom center, which shows which direction the aircraft is flying. These 4 basic flight instruments are typically augmented with a turn-and-bank indicator that displays the rate of turn in the roll axis and amount of bank in the yaw axis, and a vertical speed indicator that displays the rate of ascent or descent in feet per minute. Assuming that the aircraft has radio navigation aids, it will also come equipped with a Radio Magnetic Indicator (RMI) coupled to an Automatic Direction Finder (ADF), and a Course Deviation Indicator (CDI) driven by VHF Omnidirectional Range (VOR) and Instrument Landing System (ILS) receivers. The ILS receiver drives the glide scope needle to set the glide path on an instrument approach and localizer needle provides lateral guidance to the center of the runway. A VHF Marker Beacon may be used in conjunction with the ILS to indicate position along the approach to the runway. These early flight instruments were analog meaning that they contained either mechanical or electro-mechanical rotating mechanisms to drive the pointer dials on the instruments. For example, an analog airspeed indicator receives air pressure from the pitot tube, which expands a bellows that turns the dial on the indicator. With a digital system, the pitot air pressure enters an air data computer that converts the analog information into a digital data stream. Digital data is then sent to the airspeed indicator via an aircraft data bus where the data is converted back into analog signals to drive a pointer dial and/or is displayed digitally in numbers. </p>\n' +
+
+
             '</div>');
 
     return (<section>
@@ -38,7 +43,7 @@ const LessonPage = () => {
                 <div className="choose__img_lesson">
                     {showVideo ? (
                         <ReactPlayer style={{position: 'center', paddingLeft: '100px'}}
-                                     url="https://www.youtube.com/watch?v=YVKdnKH4_08&pp=ygWEAdCe0JHQqdCY0JUg0KHQktCV0JTQldCd0JjQryDQniDQn9Cg0JjQkdCe0KDQndCr0KUg0JTQntCh0JrQkNClLCDQn9Cj0JvQrNCi0JDQpSDQmCDQn9CQ0J3QldCb0K_QpSDQo9Cf0KDQkNCS0JvQldCd0JjQryDQsNCy0LjQsNGG0LjRjw%3D%3D"
+                                     url="https://youtu.be/1CSKDw9CVLg"
                                      controls
                                      width="100%"
                                      height="450px"
