@@ -29,7 +29,7 @@ const coursesData = [
     {
         id: "03",
         title: "Date conversion",
-        lesson: 1,
+        lesson: 2,
         students: 1.7,
         rating: 4.95,
         imgUrl: courseImg3,

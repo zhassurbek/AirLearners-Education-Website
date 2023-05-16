@@ -5,20 +5,7 @@ import {Col, Container} from "reactstrap";
 import CourseCard from "../../coursesList/CourseCard";
 
 // страница список-курса 2
-//
-// const courses = [
-//     {
-//         title: "Lesson 1. NUMBERING SYSTEMS",
-//         description: "...",
-//         image: "",
-//     },
-//     {
-//         title: "Lesson 2. BINARY AND OCTAL NUMBER SYSTEM CONVERSION",
-//         description: "...",
-//         image: "",
-//     },
-//
-// ];
+
 
 const lessonsData = [
     {

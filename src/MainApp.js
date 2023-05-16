@@ -38,6 +38,10 @@ import Course2Lesson2Page
     from "./pagesInSite/courses/CoursesShowInnerPage/course2/lesson2/lessonPages/Course2Lesson2Page";
 import Course2Lesson1InnerPage
     from "./pagesInSite/courses/CoursesShowInnerPage/course2/lesson1/Course2Lesson1InnerPage";
+import Course3Lesson2Page
+    from "./pagesInSite/courses/CoursesShowInnerPage/course3/lesson2/lessonPages/Course3Lesson2Page";
+import Course3Lesson1InnerPage
+    from "./pagesInSite/courses/CoursesShowInnerPage/course3/lesson1/Course3Lesson1InnerPage";
 
 
 const MainApp = () => {
@@ -105,8 +109,8 @@ const MainApp = () => {
                 {/*для перехода на внутреннюю страницу по тестам уроков по нумерации
                 course 3
                 */}
-                <Route path="/course/03/lesson/quiz/01" component={Lesson1Quiz1Show} />
-                <Route path="/course/03/lesson/quiz/02" component={Lesson2Quiz2Show} />
+                {/*<Route path="/lesson/quiz/08" component={Course3Lesson1Quiz1Show} />*/}
+                {/*<Route path="/lesson/quiz/09" component={Course3Lesson2Quiz2Show} />*/}
 
 
 
@@ -122,8 +126,8 @@ const MainApp = () => {
                 {/*для перехода на внутреннюю страницу по тестам уроков по нумерации
                     третий курс
                 */}
-                <Route path="/course/03/lesson/01" component={Lesson1Quiz1Show} />
-                <Route path="/course/03/lesson/02" component={Lesson1Quiz1Show} />
+                <Route path="/lesson/08" component={Course3Lesson1InnerPage} />
+                <Route path="/lesson/09" component={Course3Lesson2Page} />
 
 
 
