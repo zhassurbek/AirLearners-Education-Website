@@ -14,32 +14,27 @@ function Lesson2Test() {
 
     const questions = [
         {
-            question: "1.  test to lesson 2Второй тест первого курса второго урока е EADI?",
-            options: ["Голубой", "Пурпурный", "Красный"],
-            answer: "Пурпурный"
+            question: "1. What is the fixed feature of an ADI?.",
+            options: ["The glideslope pointer.", "The aircraft symbol.", "The lateral deviation bar."],
+            answer: "The aircraft symbol."
         },
 
         {
-            question: "2. У систем EFIS две панели управления, какова их цель?",
-            options: ["Одна для управления типом дисплея EFIS, а другая для выбора источника отображаемой информации.", "Одна для дисплея EADI, а другая для дисплея EHSI.", "Одна для управления дисплеем, а другая для резерва."],
-            answer: "Одна для управления типом дисплея EFIS, а другая для выбора источника отображаемой информации."
+            question: "2. On an EADI, the Flight Director command bars show.",
+            options: ["the path with respect to the horizon.", "the required path with respect to the actual path.", "the actual path with respect to the required path."],
+            answer: "the required path with respect to the actual path."
         },
 
         {
-            question: "3. Что вы ожидаете увидеть на дисплее EADI?",
-            options: ["Курсовую информацию, метеорадар, предупреждение о точке маршрута и индикаторы направления.", "Показания компаса, выбранный курс и VOR.", "Команды директора полета, индикатор поперечного наклона, скорость до высоты и автоматическую посадку"],
-            answer: "Команды директора полета, индикатор поперечного наклона, скорость до высоты и автоматическую посадку"
+            question: "3. What instrument includes a display of a rising runway?.",
+            options: ["ECAM.", "EHSI.", "EADI."],
+            answer: "EADI."
         },
 
         {
-            question: "4. На дисплее EADI отображаются?",
-            options: ["Угол тангажа, угол крена и точки маршрута", "Угол тангажа и угол крена", "Курс и метеорологический радар"],
-            answer: "Угол тангажа и угол крена"
-        },
-        {
-            question: "5. Что отображается на экране EHSI в режиме карты?",
-            options: ["Курс, скорость и высота", "Карта с маршрутом", "Направление ветра и аэропорты"],
-            answer: "Карта с маршрутом"
+            question: "4. What functions are available on the EHSI?.",
+            options: ["Full arc and Wx only.", "Full arc, Wx and Map Mode.", "Full Arc only."],
+            answer: "Full arc, Wx and Map Mode."
         },
     ];
 

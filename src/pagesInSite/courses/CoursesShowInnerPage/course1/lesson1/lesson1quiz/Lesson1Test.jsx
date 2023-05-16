@@ -14,32 +14,32 @@ function Lesson1Test() {
 
     const questions = [
         {
-            question: "1. Какого цвета команды директора полета на дисплее EADI?",
-            options: ["Голубой", "Пурпурный", "Красный"],
-            answer: "Пурпурный"
+            question: "1. What are the basic elements for 'Classic T' format?",
+            options: ["Direction, altitude and height.", "Airspeed, pitch and roll.", "Airspeed, attitude, altitude and direction."],
+            answer: "Airspeed, attitude, altitude and direction."
         },
 
         {
-            question: "2. У систем EFIS две панели управления, какова их цель?",
-            options: ["Одна для управления типом дисплея EFIS, а другая для выбора источника отображаемой информации.", "Одна для дисплея EADI, а другая для дисплея EHSI.", "Одна для управления дисплеем, а другая для резерва."],
-            answer: "Одна для управления типом дисплея EFIS, а другая для выбора источника отображаемой информации."
+            question: "2. Typical displays on an EHSI are",
+            options: ["Engine indications.", "VOR, Map, Plan and weather radar", "VOR, Plan, Map and Attitude"],
+            answer: "VOR, Map, Plan and weather radar"
         },
 
         {
-            question: "3. Что вы ожидаете увидеть на дисплее EADI?",
-            options: ["Курсовую информацию, метеорадар, предупреждение о точке маршрута и индикаторы направления.", "Показания компаса, выбранный курс и VOR.", "Команды директора полета, индикатор поперечного наклона, скорость до высоты и автоматическую посадку"],
+            question: "3. An EADI display showing a moving runway moves down during the final stages of an approach. The aircraft must.",
+            options: ["fly down", "fly up", "hold descent path."],
             answer: "Команды директора полета, индикатор поперечного наклона, скорость до высоты и автоматическую посадку"
         },
 
         {
-            question: "4. На дисплее EADI отображаются?",
-            options: ["Угол тангажа, угол крена и точки маршрута", "Угол тангажа и угол крена", "Курс и метеорологический радар"],
-            answer: "Угол тангажа и угол крена"
+            question: "4. During an instrument approach, the glideslope pointer eflects below the glideslope centre mark. This means the aircraft is positioned.",
+            options: ["above the glideslope.", "below the glideslope.", "to the left of the localiser."],
+            answer: "above the glideslope."
         },
         {
-            question: "5. Что отображается на экране EHSI в режиме карты?",
-            options: ["Курс, скорость и высота", "Карта с маршрутом", "Направление ветра и аэропорты"],
-            answer: "Карта с маршрутом"
+            question: "5. Engine parameters are displayed on.",
+            options: ["ECAM", "EHSI", "FMSCDU"],
+            answer: "ECAM"
         },
     ];
 
