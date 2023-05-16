@@ -10,7 +10,7 @@ import {Link} from "react-router-dom";
 const LessonPage = () => {
     const [showVideo, setShowVideo] = useState(false);
     const [lessonName, setLessonName] = useState('LESSON 2. ELECTRONIC DISPLAYS AND ELECTRONIC FLIGHT INSTRUMENT SYSTEM');
-    const [videoUrl, setVideoUrl] = useState('https://youtu.be/jYqEPBm5z8Q');
+    const [videoUrl, setVideoUrl] = useState('https://youtu.be/1CSKDw9CVLg');
     const [lessonDescription2, setlessonDescription2] = useState('');
     const [lessonDescription, setLessonDescription] =
         useState('' +
@@ -44,7 +44,7 @@ const LessonPage = () => {
                 <div className="choose__img_lesson">
                     {showVideo ? (
                         <ReactPlayer style={{position: 'center', paddingLeft: '100px'}}
-                                     url="https://youtu.be/jYqEPBm5z8Q"
+                                     url="https://youtu.be/1CSKDw9CVLg"
                                      controls
                                      width="100%"
                                      height="450px"

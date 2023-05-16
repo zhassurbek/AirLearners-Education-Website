@@ -42,7 +42,7 @@ const LessonPage = () => {
                 <div className="choose__img_lesson">
                     {showVideo ? (
                         <ReactPlayer style={{position: 'center', paddingLeft: '100px'}}
-                                     url="https://youtu.be/1CSKDw9CVLg"
+                                     url="https://youtu.be/jYqEPBm5z8Q"
                                      controls
                                      width="100%"
                                      height="450px"
