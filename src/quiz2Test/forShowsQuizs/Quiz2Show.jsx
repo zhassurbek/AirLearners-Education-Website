@@ -9,22 +9,6 @@ const Home = () => {
         <div>
             <Quiz2Test />
         </div>
-        {/*<HeroSection/>*/}
-        {/*<CompanySection/>*/}
-        {/*<div id="example">*/}
-        {/*    <AboutUs/>*/}
-        {/*</div>*/}
-        {/*<div id="courses">*/}
-        {/*    <Courses/>*/}
-        {/*</div>*/}
-        {/*<div id="quizs-List-Page">*/}
-        {/*    <QuizsListPage/>*/}
-        {/*</div>*/}
-        {/*<ChooseUs/>*/}
-        {/*<Features/>*/}
-        {/*<FreeCourse/>*/}
-        {/*<Testimonials/>*/}
-        {/*<Newsletter/>*/}
         <Footer/>
     </Fragment>);
 };

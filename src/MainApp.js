@@ -23,6 +23,13 @@ import Blog3InnerPageShow from "./Blogs/InnerPagesBlogs/Blog3InnerPageShow";
 import Blog4InnerPageShow from "./Blogs/InnerPagesBlogs/Blog4InnerPageShow";
 import Lesson1Quiz1Show
     from "./pagesInSite/courses/CoursesShowInnerPage/course1/lesson1/lesson1quiz/forShowsQuizs/Lesson1Quiz1Show";
+import Lesson2Test from "./pagesInSite/courses/CoursesShowInnerPage/course1/lesson2/lesson2quiz/Lesson2Test";
+import Lesson2Page from "./pagesInSite/courses/CoursesShowInnerPage/course1/lesson2/lessonPages/Lesson2Page";
+import Lesson2Quiz2Show
+    from "./pagesInSite/courses/CoursesShowInnerPage/course1/lesson2/lesson2quiz/forShowsQuizs/Lesson2Quiz2Show";
+import Lesson3Quiz3Show
+    from "./pagesInSite/courses/CoursesShowInnerPage/course1/lesson3/lesson2quiz/forShowsQuizs/Lesson3Quiz3Show";
+import Lesson3Page from "./pagesInSite/courses/CoursesShowInnerPage/course1/lesson3/lessonPages/Lesson3Page";
 
 
 const MainApp = () => {
@@ -30,7 +37,6 @@ const MainApp = () => {
         <Router>
             <Switch>
                 <Route exact path="/" component={Home} />
-                {/*<Route exact path="/about" component={About} />*/}
                 <Route exact path="/courses" component={Courses} />
                 <Route exact path="/tests" component={Tests} />
                 {/*<Route exact path="/quizsListPage" component={QuizsListPage} />*/}
@@ -50,14 +56,11 @@ const MainApp = () => {
 
 
                 <Route exact path="/lesson/01" component={Lesson1Page} />
+                <Route exact path="/lesson/02" component={Lesson2Page} />
+                <Route exact path="/lesson/03" component={Lesson3Page} />
 
                 {/*page textBooks for download*/}
                 <Route exact path="/textbooks" component={TextBooksShow} />
-
-
-
-                {/* For full-courses page rendering for courses */}
-                {/*<Route path="/course/01" component={Cour}*/}
 
 
 
@@ -79,7 +82,23 @@ const MainApp = () => {
 
                 {/*для перехода на внутреннюю страницу по тестам уроков по нумерации*/}
                 <Route path="/lesson/quiz/01" component={Lesson1Quiz1Show} />
-                {/*<Route path="/quiz/01" component={Quiz1Show} />*/}
+                <Route path="/lesson/quiz/02" component={Lesson2Quiz2Show} />
+                <Route path="/lesson/quiz/03" component={Lesson3Quiz3Show} />
+
+                {/*для перехода на внутреннюю страницу по тестам уроков по нумерации
+                    второй курс
+                */}
+                <Route path="/lesson/quiz/01" component={Lesson1Quiz1Show} />
+                <Route path="/lesson/quiz/02" component={Lesson1Quiz1Show} />
+                <Route path="/lesson/quiz/03" component={Lesson1Quiz1Show} />
+
+                {/*для перехода на внутреннюю страницу по тестам уроков по нумерации
+                    третий курс
+                */}
+                <Route path="/lesson/quiz/01" component={Lesson1Quiz1Show} />
+                <Route path="/lesson/quiz/02" component={Lesson1Quiz1Show} />
+                <Route path="/lesson/quiz/03" component={Lesson1Quiz1Show} />
+
             </Switch>
         </Router>
     );

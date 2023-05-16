@@ -7,7 +7,6 @@ const courses = [
         title: "Урок 1",
         description: "Описание курса 1",
         image: "",
-        // https://via.placeholder.com/150
     },
     {
         title: "Урок 2",
@@ -41,11 +40,6 @@ const Course1InnerInMainPage = () => {
                                 <Link to={`/lesson${index + 1}`}>
                                     <Button>Перейти</Button>
                                 </Link>
-                            //     <p className="enroll d-flex align-items-center gap-1">
-                            // {/*<a href="#"> Зарегистрироваться сейчас</a>*/}
-                            //     <Link to={`/course/${id}`}> Зарегистрироваться сейчас</Link>
-                            //     </p>
-
                             )}
                         </Card.Body>
                     </Card>

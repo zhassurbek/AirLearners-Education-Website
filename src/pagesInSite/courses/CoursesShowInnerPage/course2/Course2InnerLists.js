@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 import {Col, Container} from "reactstrap";
 import CourseCard from "../../coursesList/CourseCard";
 
-// PAGE /course/01
+// PAGE /course/02
 
 const lessonsData = [
     {
