@@ -9,7 +9,7 @@ import {Link} from "react-router-dom";
 
 const LessonPage = () => {
     const [showVideo, setShowVideo] = useState(false);
-    const [lessonName, setLessonName] = useState('Урок 1. ОБЩИЕ СВЕДЕНИЯ О ПРИБОРНЫХ ДОСКАХ, ПУЛЬТАХ И ПАНЕЛЯХ УПРАВЛЕНИЯ');
+    const [lessonName, setLessonName] = useState('LESSON 3. ENGINE INDICATION AND CREW ALERTING SYSTEM');
     const [videoUrl, setVideoUrl] = useState('https://youtu.be/NG0RCQUfpfc');
     const [lessonDescription2, setlessonDescription2] = useState('');
     const [lessonDescription, setLessonDescription] =
