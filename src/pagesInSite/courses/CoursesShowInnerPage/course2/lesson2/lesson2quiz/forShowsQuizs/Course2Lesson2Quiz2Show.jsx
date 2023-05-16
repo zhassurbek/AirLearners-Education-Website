@@ -1,6 +1,6 @@
 import React, {Fragment} from "react";
 import Header from "../../../../../../../components/Header/Header";
-import Lesson1Test from "../Lesson1Test";
+import Course2Lesson2Test from "../Course2Lesson2Test";
 import Footer from "../../../../../../../components/Footer/Footer";
 
 
@@ -11,7 +11,7 @@ const Home = () => {
     return (<Fragment>
         <Header/>
         <div>
-            <Lesson1Test/>
+            <Course2Lesson2Test/>
         </div>
 
         <Footer/>

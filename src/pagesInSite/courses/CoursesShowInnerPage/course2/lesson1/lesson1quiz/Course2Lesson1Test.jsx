@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
-import {Form, Button} from 'react-bootstrap';
-import './Quiz2Test.css'; // импортируем CSS-файл
+import {Button, Form} from 'react-bootstrap';
+import './Quiz2Test.css';
+import {Link} from "react-router-dom";
 
 // тело первого текста которое будет отображаться внутри первого теста
 
-function Lesson1Test() {
+function Course2Lesson1Test() {
     const [questionIndex, setQuestionIndex] = useState(0);
     const [score, setScore] = useState(0);
     const [userAnswers, setUserAnswers] = useState([]); // массив для хранения ответов пользователя
@@ -13,32 +14,32 @@ function Lesson1Test() {
 
     const questions = [
         {
-            question: "1. Какого цвета команды директора полета на дисплее EADI?",
-            options: ["Голубой", "Пурпурный", "Красный"],
-            answer: "Пурпурный"
+            question: "1. Convert 011101 Base2 to octal?",
+            options: ["25", "35", "33"],
+            answer: "35"
         },
 
         {
-            question: "2. У систем EFIS две панели управления, какова их цель?",
-            options: ["Одна для управления типом дисплея EFIS, а другая для выбора источника отображаемой информации.", "Одна для дисплея EADI, а другая для дисплея EHSI.", "Одна для управления дисплеем, а другая для резерва."],
-            answer: "Одна для управления типом дисплея EFIS, а другая для выбора источника отображаемой информации."
+            question: "2. The binary number 11010111 expressed as a decimal is?",
+            options: ["215", "223", "207"],
+            answer: "215"
         },
 
         {
-            question: "3. Что вы ожидаете увидеть на дисплее EADI?",
-            options: ["Курсовую информацию, метеорадар, предупреждение о точке маршрута и индикаторы направления.", "Показания компаса, выбранный курс и VOR.", "Команды директора полета, индикатор поперечного наклона, скорость до высоты и автоматическую посадку"],
-            answer: "Команды директора полета, индикатор поперечного наклона, скорость до высоты и автоматическую посадку"
+            question: "3. The octal number 1001 expressed as a decimal is?",
+            options: ["9", "65", "513"],
+            answer: "513"
         },
 
         {
-            question: "4. На дисплее EADI отображаются?",
-            options: ["Угол тангажа, угол крена и точки маршрута", "Угол тангажа и угол крена", "Курс и метеорологический радар"],
-            answer: "Угол тангажа и угол крена"
+            question: "4. What is 345 in binary?",
+            options: ["100111001", "101011001", "110011001"],
+            answer: "101011001"
         },
         {
-            question: "5. Что отображается на экране EHSI в режиме карты?",
-            options: ["Курс, скорость и высота", "Карта с маршрутом", "Направление ветра и аэропорты"],
-            answer: "Карта с маршрутом"
+            question: "5. What is hex 110 in decimal?",
+            options: ["282", "272", "32"],
+            answer: "272"
         },
     ];
 
@@ -102,7 +103,7 @@ function Lesson1Test() {
         const uniqueQuestions = [...new Set(questions.map(question => question.question))];
         return (
             <div>
-                <h2>Результаты теста::</h2>
+                <h2>Результаты теста:</h2>
                 <p>Баллы: {score} / {questions.length}</p>
                 <h3>Ответы:</h3>
                 <ol>
@@ -131,9 +132,33 @@ function Lesson1Test() {
 
     return (
         <div className="container quiz2test">
-            {questionIndex < questions.length ? renderQuiz() : renderResults()}
+            {questionIndex < questions.length ? (
+                renderQuiz()
+            ) : (
+                <div>
+                    {renderResults()}
+                    <br/>
+                    <Link
+                        to="/course/01"
+                        style={{
+                            margin: '20px',
+                            color: '#ffffff',
+                            backgroundColor: '#00ab1e',
+                            borderRadius: '5px',
+                            textDecoration: 'none',
+                            paddingBottom: '20px',
+                            padding: '8px',
+                            textAlign: 'center',
+                            fontSize: '25px'
+                        }}
+                    >
+                        Пройти к курсам
+                    </Link>
+                </div>
+            )}
         </div>
     );
+
 }
 
-export default Lesson1Test;
+export default Course2Lesson1Test;

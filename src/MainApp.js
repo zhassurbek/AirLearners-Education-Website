@@ -30,6 +30,14 @@ import Lesson2Quiz2Show
 import Lesson3Quiz3Show
     from "./pagesInSite/courses/CoursesShowInnerPage/course1/lesson3/lesson2quiz/forShowsQuizs/Lesson3Quiz3Show";
 import Lesson3Page from "./pagesInSite/courses/CoursesShowInnerPage/course1/lesson3/lessonPages/Lesson3Page";
+import Course2Lesson1Quiz1Show
+    from "./pagesInSite/courses/CoursesShowInnerPage/course2/lesson1/lesson1quiz/forShowsQuizs/Course2Lesson1Quiz1Show";
+import Course2Lesson2Quiz2Show
+    from "./pagesInSite/courses/CoursesShowInnerPage/course2/lesson2/lesson2quiz/forShowsQuizs/Course2Lesson2Quiz2Show";
+import Course2Lesson2Page
+    from "./pagesInSite/courses/CoursesShowInnerPage/course2/lesson2/lessonPages/Course2Lesson2Page";
+import Course2Lesson1InnerPage
+    from "./pagesInSite/courses/CoursesShowInnerPage/course2/lesson1/Course2Lesson1InnerPage";
 
 
 const MainApp = () => {
@@ -80,24 +88,44 @@ const MainApp = () => {
                 <Route exact path="/blog/4" component={Blog4InnerPageShow} />
 
 
-                {/*для перехода на внутреннюю страницу по тестам уроков по нумерации*/}
+                {/*для перехода на внутреннюю страницу по тестам уроков по нумерации
+                course 1
+                */}
                 <Route path="/lesson/quiz/01" component={Lesson1Quiz1Show} />
                 <Route path="/lesson/quiz/02" component={Lesson2Quiz2Show} />
                 <Route path="/lesson/quiz/03" component={Lesson3Quiz3Show} />
 
                 {/*для перехода на внутреннюю страницу по тестам уроков по нумерации
+                course 2
+                */}
+                <Route path="/lesson/quiz/06" component={Course2Lesson1Quiz1Show} />
+                <Route path="/lesson/quiz/07" component={Course2Lesson2Quiz2Show} />
+
+
+                {/*для перехода на внутреннюю страницу по тестам уроков по нумерации
+                course 3
+                */}
+                <Route path="/course/03/lesson/quiz/01" component={Lesson1Quiz1Show} />
+                <Route path="/course/03/lesson/quiz/02" component={Lesson2Quiz2Show} />
+
+
+
+
+
+
+                {/*для перехода на внутреннюю страницу по тестам уроков по нумерации
                     второй курс
                 */}
-                <Route path="/lesson/quiz/01" component={Lesson1Quiz1Show} />
-                <Route path="/lesson/quiz/02" component={Lesson1Quiz1Show} />
-                <Route path="/lesson/quiz/03" component={Lesson1Quiz1Show} />
+                <Route exact path="/lesson/06" component={Course2Lesson1InnerPage} />
+                <Route exact path="/lesson/07" component={Course2Lesson2Page} />
 
                 {/*для перехода на внутреннюю страницу по тестам уроков по нумерации
                     третий курс
                 */}
-                <Route path="/lesson/quiz/01" component={Lesson1Quiz1Show} />
-                <Route path="/lesson/quiz/02" component={Lesson1Quiz1Show} />
-                <Route path="/lesson/quiz/03" component={Lesson1Quiz1Show} />
+                <Route path="/course/03/lesson/01" component={Lesson1Quiz1Show} />
+                <Route path="/course/03/lesson/02" component={Lesson1Quiz1Show} />
+
+
 
             </Switch>
         </Router>
