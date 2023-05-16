@@ -1,0 +1,43 @@
+.lesson__inner__title {
+    border: 20px;
+    /*padding: 20px;*/
+    height: 100px;
+    /*border-radius: ;*/
+}
+
+.lesson__inner__youtube {
+    border: 20px;
+
+    /*padding: 20px;*/
+    /*height: 100px;*/
+    /*border-radius: ;*/
+}
+
+.lesson__inner__description {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+
+/*.lesson__inner__description {*/
+/*    !*justify-content: center;*!*/
+/*    !*border: 20px;*!*/
+/*    !*!*padding: 20px;*!*!*/
+/*    !*height: 100px;*!*/
+/*    !*border-radius: ;*!*/
+/*    border-top: 60px;*/
+/*    !*padding: 20px;*!*/
+/*    height: 100px;*/
+/*}*/
+
+.choose__img_lesson {
+    position: relative;
+    top: 0;
+    left: 50px;
+    width: 100%;
+    height: 100%;
+    z-index: 777;
+    /*padding-right: 50px;*/
+}

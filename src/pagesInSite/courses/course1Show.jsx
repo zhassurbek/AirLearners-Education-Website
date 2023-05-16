@@ -10,15 +10,6 @@ const Home = () => {
         <Fragment>
             <Header />
             <Course1InnerInMainPage />
-            {/*<HeroSection />*/}
-            {/*<CompanySection />*/}
-            {/*<AboutUs />*/}
-            {/*<Courses />*/}
-            {/*<ChooseUs />*/}
-            {/*<Features />*/}
-            {/*<FreeCourse />*/}
-            {/*<Testimonials />*/}
-            {/*<Newsletter />*/}
             <Footer />
         </Fragment>
     );

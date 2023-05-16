@@ -3,7 +3,6 @@ import {Form, Button} from 'react-bootstrap';
 import './Quiz2Test.css'; // импортируем CSS-файл
 
 // тело первого текста которое будет отображаться внутри первого теста
-// Quiz Test for lesson 1
 
 function Lesson1Test() {
     const [questionIndex, setQuestionIndex] = useState(0);
@@ -35,6 +34,11 @@ function Lesson1Test() {
             question: "4. На дисплее EADI отображаются?",
             options: ["Угол тангажа, угол крена и точки маршрута", "Угол тангажа и угол крена", "Курс и метеорологический радар"],
             answer: "Угол тангажа и угол крена"
+        },
+        {
+            question: "5. Что отображается на экране EHSI в режиме карты?",
+            options: ["Курс, скорость и высота", "Карта с маршрутом", "Направление ветра и аэропорты"],
+            answer: "Карта с маршрутом"
         },
     ];
 
