@@ -1,6 +1,13 @@
-# Getting Started with Create React App
+# Education Website for Air Learnings by Zhassurbek
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## В этом проекте реализованы:
+ - Уроки по авиа темам
+ - Тесты на эти темы
+ - Видеоуроки
+ - Блоги(посты)
+ - Учебники
+ - AskMe - ИИ который отвечает на любые вопросы
+ - И другие функциональности...
 
 ## Available Scripts
 
